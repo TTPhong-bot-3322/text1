@@ -56,6 +56,13 @@
                                 <span>Sản phẩm</span>
                             </a>
                         </li>
+                        <li class="sidebar-item  ">
+
+                            <a href="index.php?action=listnguoidung" class='sidebar-link'>
+                                <i class="bi bi-file-earmark-spreadsheet-fill"></i>
+                                <span>Người dùng</span>
+                            </a>
+                        </li>
 
                     </ul>
                 </div>
