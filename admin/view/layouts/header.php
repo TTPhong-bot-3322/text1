@@ -69,6 +69,13 @@
                                 <span>Hóa đơn</span>
                             </a>
                         </li>
+                        <li class="sidebar-item  ">
+
+                            <a href="index.php?action=listbinhluan" class='sidebar-link'>
+                                <i class="bi bi-file-earmark-spreadsheet-fill"></i>
+                                <span>Bình luận</span>
+                            </a>
+                        </li>
 
                     </ul>
                 </div>
