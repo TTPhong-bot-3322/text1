@@ -63,6 +63,12 @@
                                 <span>Người dùng</span>
                             </a>
                         </li>
+                        <li class="sidebar-item">
+                            <a href="index.php?action=listhoadon" class='sidebar-link'>
+                                <i class="bi bi-file-earmark-spreadsheet-fill"></i>
+                                <span>Hóa đơn</span>
+                            </a>
+                        </li>
 
                     </ul>
                 </div>
