@@ -25,6 +25,12 @@ if (isset($_GET['action']) && $_GET['action'] != '') {
         case "editsanpham":
             include_once 'controller/sanpham/edit.php';
             break;
+            case "listnguoidung":
+                include_once 'controller/nguoidung/index.php';
+                break;
+            case "deletenguoidung":
+                include_once 'controller/nguoidung/delete.php';
+                break;
     }
 } else {
     include_once 'controller/dashboard/index.php';
