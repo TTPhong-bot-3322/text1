@@ -1,4 +1,4 @@
 <?php
-    include_once ('view/home/index.php');
+    include_once ('Views/home/index.php');
 ?>
 
