@@ -56,18 +56,27 @@
                                 <span>Sản phẩm</span>
                             </a>
                         </li>
+                        <li class="sidebar-item  ">
+
+                            <a href="index.php?action=listnguoidung" class='sidebar-link'>
+                                <i class="bi bi-file-earmark-spreadsheet-fill"></i>
+                                <span>Người dùng</span>
+                            </a>
+                        </li>
                         <li class="sidebar-item">
                             <a href="index.php?action=listhoadon" class='sidebar-link'>
                                 <i class="bi bi-file-earmark-spreadsheet-fill"></i>
                                 <span>Hóa đơn</span>
                             </a>
                         </li>
-                        <!-- <li class="sidebar-item">
-                            <a href="index.php?action=listchitiethoahon" class='sidebar-link'>
+                        <li class="sidebar-item  ">
+
+                            <a href="index.php?action=listbinhluan" class='sidebar-link'>
                                 <i class="bi bi-file-earmark-spreadsheet-fill"></i>
-                                <span>chi tiết Hóa đơn</span>
+                                <span>Bình luận</span>
                             </a>
-                        </li> -->
+                        </li>
+
                     </ul>
                 </div>
                 <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
