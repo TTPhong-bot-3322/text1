@@ -25,6 +25,15 @@ if (isset($_GET['action']) && $_GET['action'] != '') {
         case "editsanpham":
             include_once 'controller/sanpham/edit.php';
             break;
+        case "listhoadon":
+            include_once 'controller/hoadon/index.php';
+            break;
+        // case "xoaHD":
+        //     include_once 'controller/hoadon/delete.php';
+        //     break;
+        case "listchitiethoahon":
+            include_once 'controller/ChiTietHoaDon/index.php';
+            break;
             case "listnguoidung":
                 include_once 'controller/nguoidung/index.php';
                 break;

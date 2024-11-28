@@ -7,10 +7,13 @@ function listhoadon() {
     return pdo_query($sql);
 }
 
+function listChiTietHoaDon($id) {
+    $sql = "SELECT * FROM chitiet_hoadon where id_hoa_don = '$id'";
+    return pdo_query($sql);
+}
 
-
-// function getHoaDonById($id) {
-//     $sql = "SELECT * FROM hoa_don WHERE id = ?";
-//     return pdo_query_one($sql, [$id]);
-// }
+function getHoaDonById($id) {
+    $sql = "SELECT * FROM hoa_don WHERE id = '$id'";
+    return pdo_query_one($sql);
+}
 ?>

@@ -2,11 +2,17 @@
 
 
 <?php
-include_once './model/chitiethoadon.php';
+include_once './model/sanpham.php';
 include_once './model/hoadon.php';
 
-$listChiTietHoaDon = listChiTietHoaDon($_GET['id']);
-$listhoadon = listhoadon();
-
-
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+    $listChiTietHoaDon = listChiTietHoaDon($id);
+    foreach ($listChiTietHoaDon as $key => $item) {
+        $chiTietSanPham = getSanPhamById($item['id_sp']);
+        $listChiTietHoaDon[$key]['ten_sp'] = $chiTietSanPham['ten_san_pham'];
+        $listChiTietHoaDon[$key]['img'] = $chiTietSanPham['hinh_anh'];
+    }
+    $chiTietHoaDon = getHoaDonById($id);
+}
 include_once './view/chitiethoadon/index.php';
