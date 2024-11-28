@@ -130,7 +130,7 @@ include_once("./Views/layout/header.php");
 					</div>
 					<h3><?= $item['ten_san_pham'] ?></h3>
 					<p class="product-price"><span><?= $item['gia'] ?></span> </p>
-					<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					<a href="index.php?action=themgiohang&id=<?=$item['id_sp']?>" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
 				</div>
 			</div>
 			<?php } ?>
