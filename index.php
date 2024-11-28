@@ -1,9 +1,16 @@
 <?php
+session_start();
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 $base_url = "http://" . $_SERVER['SERVER_NAME'] . dirname($_SERVER["REQUEST_URI"] . '?') . '/';
 if (isset($_GET['action']) && $_GET['action'] != '') {
     $action = $_GET['action'];
     switch ($action) {
+        case 'themgiohang':
+            include_once 'Controllers/cart/add.php';
+            break;
+        case 'listgiohang':
+            include_once 'Controllers/cart/index.php';
+            break;
     }
 } else {
     include_once 'Controllers/home/index.php';
