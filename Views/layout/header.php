@@ -83,6 +83,7 @@
 										<li><a href="single-news.html">Single News</a></li>
 									</ul>
 								</li>
+								<li ><a href="index.php?action=taikhoan">Đăng nhập</a></li>
 								<li><a href="contact.html">Contact</a></li>
 								<li><a href="shop.html">Shop</a>
 									<ul class="sub-menu">
@@ -98,6 +99,7 @@
 										<a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
 									</div>
 								</li>
+
 							</ul>
 						</nav>
 						<a class="mobile-show search-bar-icon" href="#"><i class="fas fa-search"></i></a>

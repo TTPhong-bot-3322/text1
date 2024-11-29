@@ -11,7 +11,16 @@ if (isset($_GET['action']) && $_GET['action'] != '') {
         case 'listgiohang':
             include_once 'Controllers/cart/index.php';
             break;
-    }
+        case 'taikhoan':
+            include_once 'Controllers/taikhoan/index.php';
+            break;
+        case 'dangky':
+            include_once 'Controllers/taikhoan/dangky.php';
+            break;
+        case 'quenmk':
+            include_once 'Controllers/taikhoan/quenmk.php';
+            break;
+        }
 } else {
     include_once 'Controllers/home/index.php';
 }

@@ -51,6 +51,7 @@ include_once("./view/layouts/header.php");
                                 <tr>
                                     <td><?= $value['id_nguoi_dung'] ?></td>
                                     <td><?= $value['ten_nguoi_dung'] ?></td>
+                                    <td><?= $value['email'] ?></td>
                                     <td><?= $value['mat_khau'] ?></td>
                                     <td><?= ($value['vai_tro'] == 1) ? 'admin' : 'người dùng' ?></td>
 
