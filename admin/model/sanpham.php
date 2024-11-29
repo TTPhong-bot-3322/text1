@@ -37,3 +37,10 @@ function editSanPham($id, $name, $idDanhMuc, $gia, $mota, $fileName)
 //     $sql = "update danh_muc set status = '$status' where id_danh_muc='$id'";
 //     pdo_execute($sql);
 // }
+// Trong model sanpham.php
+function countSanPham() {
+    $sql = "SELECT COUNT(*) AS total FROM san_pham";
+    $result = pdo_query_one($sql);
+    return $result['total'];  // Trả về tổng số sản phẩm
+}
+

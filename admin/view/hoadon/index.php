@@ -28,9 +28,8 @@ include_once("./view/layouts/header.php");
         <section class="section">
             <div class="card">
                 <div class="card-header">
-                    Danh sách danh mục
+                    Danh Sách Hóa Đơn
                 </div>
-                <a href="index.php?action=adddm" class="btn btn-primary">Thêm danh mục</a>
 
                 <div class="card-body">
                     <table class="table table-striped" id="table1">
@@ -53,7 +52,7 @@ include_once("./view/layouts/header.php");
                                     <td><?= $value['dia_chi'] ?></td>
                                     <td><?= $value['ngay_dat'] ?></td>
                                     <td><?= $value['tong_tien'] ?></td>
-                                    <td><?= $value['status'] == 1 ? 'Đã duyệt' : 'Đang chờ'?></td>  
+                                    <td><?= $value['trang_thai'] == 1 ? 'Đã thanh toán' : 'Chx thanh toán'?></td>  
 
                                     <td class="text-center">
 

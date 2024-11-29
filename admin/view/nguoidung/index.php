@@ -31,7 +31,7 @@ include_once("./view/layouts/header.php");
         <section class="section">
             <div class="card">
                 <div class="card-header">
-                    Danh sách danh mục
+                    Danh Sách Người Dùng
                 </div>
              
                 <div class="card-body">
@@ -53,7 +53,7 @@ include_once("./view/layouts/header.php");
                                     <td><?= $value['ten_nguoi_dung'] ?></td>
                                     <td><?= $value['email'] ?></td>
                                     <td><?= $value['mat_khau'] ?></td>
-                                    <td><?= ($value['vai_tro'] == 1) ? 'admin' : 'người dùng' ?></td>
+                                    <td><?= ($value['role'] == 1) ? 'admin' : 'người dùng' ?></td>
 
                                     <td>
                                     <a class="btn btn-secondary" href="index.php?action=deletenguoidung&id_nguoi_dung=<?=$value['id_nguoi_dung']?>" onclick="return confirm('Bạn có chắc muốn xóa bình luận này?');">Xóa</a>
