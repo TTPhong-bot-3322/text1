@@ -55,8 +55,11 @@ if (isset($_GET['action']) && $_GET['action'] != '') {
                     case "deletebinhluan":
                         include_once 'controller/binhluan/delete.php';
                         break;
+                        case "thongke":
+                            include_once 'controller/thongke/index.php';
+                            break;
                         
     }
 } else {
-    include_once 'controller/dashboard/index.php';
+    include_once 'controller/thongke/index.php';
 }
