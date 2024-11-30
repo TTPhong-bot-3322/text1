@@ -4,6 +4,7 @@
 <?php
 include_once './model/sanpham.php';
 include_once './model/hoadon.php';
+include_once './model/nguoidung.php';
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
@@ -14,5 +15,6 @@ if (isset($_GET['id'])) {
         $listChiTietHoaDon[$key]['img'] = $chiTietSanPham['hinh_anh'];
     }
     $chiTietHoaDon = getHoaDonById($id);
+    $listnguoidung = listnguoidung();
 }
 include_once './view/chitiethoadon/index.php';

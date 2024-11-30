@@ -38,6 +38,7 @@ include_once("./view/layouts/header.php");
                                 <th>ID</th>
                                 <th>Tên khách hàng</th>
                                 <th>Địa chỉ</th>
+                                <th>SDT</th>
                                 <th>Ngày đặt</th>
                                 <th>Tổng tiền</th>
                                 <th>Trạng thái</th>
@@ -45,23 +46,30 @@ include_once("./view/layouts/header.php");
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($listhoadon as $key => $value): ?>
-                                <tr>
-                                    <td><?= $value['id'] ?></td>
-                                    <td><?= $value['ten_khach_hang'] ?></td>
-                                    <td><?= $value['dia_chi'] ?></td>
-                                    <td><?= $value['ngay_dat'] ?></td>
-                                    <td><?= $value['tong_tien'] ?></td>
-                                    <td><?= $value['trang_thai'] == 1 ? 'Đã thanh toán' : 'Chx thanh toán'?></td>  
-
-                                    <td class="text-center">
-
-                                        <a href="index.php?action=listchitiethoahon&id=<?= $value['id'] ?>"
-                                            class="btn btn-danger">Xem chi tiết hóa đơn</a>
-                                            
-                                    </td>
-                                </tr>
-                            <?php endforeach; ?>
+                                <?php foreach ($listhoadon as $key => $value): ?>
+                                    <tr>
+                                        <td><?= $value['id'] ?></td>
+                                        <td>
+                                            <!-- Hiển thị tên người dùng phù hợp -->
+                                            <?php 
+                                            foreach ($listnguoidung as $item) {
+                                                if ($item['id_nguoi_dung'] == $value['id_nguoi_dung']) { // Giả sử 'user_id' là khóa ngoại trong bảng hóa đơn
+                                                    echo $item['ten_nguoi_dung'];
+                                                    break;
+                                                }
+                                            }
+                                            ?>
+                                        </td>
+                                        <td><?= $value['dia_chi'] ?></td>
+                                        <td><?= $value['sdt'] ?></td>
+                                        <td><?= $value['creat_at'] ?></td>
+                                        <td><?= $value['tong_tien'] ?></td>
+                                        <td><?= $value['trang_thai'] == 1 ? 'Đã thanh toán' : 'Chưa thanh toán' ?></td>  
+                                        <td class="text-center">
+                                            <a href="index.php?action=listchitiethoahon&id=<?= $value['id'] ?>" class="btn btn-danger">Xem chi tiết hóa đơn</a>
+                                        </td>
+                                    </tr>
+                                <?php endforeach; ?>
                         </tbody>
                     </table>
                 </div>
