@@ -38,7 +38,7 @@ function editSanPham($id, $name, $idDanhMuc, $gia, $mota, $fileName)
 //     pdo_execute($sql);
 // }
 function getsanphamganday() {
-    $sql = 'select * from san_pham order by create_at DESC limit 3';
+    $sql = 'select * from san_pham order by create_at DESC limit 6';
     return pdo_query($sql);
 }
 
