@@ -53,7 +53,9 @@ include_once("./Views/layout/header.php");
 					<tbody>
 					<?php foreach ($listgiohang as $item) { ?>
 					<tr class="table-body-row">
-									<td class="product-remove"><a href="#"><i class="far fa-window-close"></i></a></td>
+									<td class="product-remove">
+										<a href="index.php?action=delcart&id_sp='.$i.'"><i class="far fa-window-close"></i></a>
+									</td>
 									<td class="product-image"><img src="<?= $base_url . 'admin/upload/' . $item['hinh_anh'] ?>" alt=""></td>
                                     <td class="product-name"><?= $item['ten_san_pham'] ?></td>
 									<td class="product-price"><?= number_format($item['gia']) ?> VNĐ</td>
@@ -81,7 +83,7 @@ include_once("./Views/layout/header.php");
 					</tbody>
 				</table>
 				<div class="cart-buttons">
-				<a href="http://laptrinhweb/" class="boxed-btn">Đặt thêm</a>
+				<a href="http://laptrinhweb11/" class="boxed-btn">Đặt thêm</a>
 				<a href="checkout.html" class="boxed-btn black">Mua</a>
 				</div>
 			</div>
