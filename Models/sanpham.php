@@ -41,4 +41,4 @@ function getsanphamganday() {
     $sql = 'select * from san_pham order by create_at DESC limit 3';
     return pdo_query($sql);
 }
-
+?>

@@ -39,7 +39,7 @@ include_once("./Views/layout/header.php");
             <div class="total-section">
                 <div class="cart-buttons">
                     <a href="http://duan/" class="boxed-btn">Đặt thêm</a>
-                    <a href="checkout.html" class="boxed-btn black">Mua</a>
+                    <a href="index.php?action=hienthithanhtoan" class="boxed-btn black">Thanh toán</a>
                 </div>
             </div>
 				</div>

@@ -1,9 +1,6 @@
 <?php
 include_once("./view/layouts/header.php");
 ?>
-<?php
-include_once("./view/layouts/header.php");
-?>
 <div id="main">
     <header class="mb-3">
         <a href="#" class="burger-btn d-block d-xl-none">
@@ -33,36 +30,34 @@ include_once("./view/layouts/header.php");
                 <div class="card-header">
                     Danh sách danh mục
                 </div>
-             
+                <!-- <a href="index.php?action=adddm" class="btn btn-primary">Thêm danh mục</a> -->
+
                 <div class="card-body">
                     <table class="table table-striped" id="table1">
                         <thead>
                             <tr>
-                                <th class="col-2">ID</th>
-                                <th>Tên người dùng</th>
-                                <th class="col-2">Mật khẩu</th>
-                                <th class="col-2">Vai trò</th>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Message</th>
+
                             </tr>
                         </thead>
                         <tbody>
-                            <?php
-                            foreach ($listnguoidung as $key => $value) {
-                                ?>
+                            <?php foreach ($contact as $item){ ?>
                                 <tr>
-                                    <td><?= $value['id_nguoi_dung'] ?></td>
-                                    <td><?= $value['ten_nguoi_dung'] ?></td>
-                                    <td><?= $value['email'] ?></td>
-                                    <td><?= $value['mat_khau'] ?></td>
-                                    <td><?= ($value['role'] == 1) ? 'admin' : 'người dùng' ?></td>
+                                    <td><?= $item['id_ng_nhap'] ?></td>
+                                    <td><?= $item['ten_ng_nhap'] ?></td>
+                                    <td><?= $item['email'] ?></td>
+                                    <td><?= $item['phone'] ?></td>
+                                    <td><?= $item['message']?></td>
+                                    <td class="text-center">
 
-                                    <td>
-                                    <a class="btn btn-secondary" href="index.php?action=deletenguoidung&id_nguoi_dung=<?=$value['id_nguoi_dung']?>" onclick="return confirm('Bạn có chắc muốn xóa bình luận này?');">Xóa</a>
-
+                                            
                                     </td>
                                 </tr>
-                                <?php
-                            }
-                            ?>
+                            <?php } ?>
                         </tbody>
                     </table>
                 </div>
@@ -72,9 +67,5 @@ include_once("./view/layouts/header.php");
     </div>
 
     <?php
-    include_once("./view/layouts/footer.php");
-    ?>
-
-<?php
     include_once("./view/layouts/footer.php");
     ?>

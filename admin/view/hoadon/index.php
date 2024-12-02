@@ -37,7 +37,7 @@ include_once("./view/layouts/header.php");
                         <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>Tên khách hàng</th>
+                                <th>Id khách hàng</th>
                                 <th>Địa chỉ</th>
                                 <th>Ngày đặt</th>
                                 <th>Tổng tiền</th>
@@ -49,11 +49,11 @@ include_once("./view/layouts/header.php");
                             <?php foreach ($listhoadon as $key => $value): ?>
                                 <tr>
                                     <td><?= $value['id'] ?></td>
-                                    <td><?= $value['ten_khach_hang'] ?></td>
+                                    <td><?= $value['id_nguoi_dung'] ?></td>
                                     <td><?= $value['dia_chi'] ?></td>
-                                    <td><?= $value['ngay_dat'] ?></td>
+                                    <td><?= $value['creat_at'] ?></td>
                                     <td><?= $value['tong_tien'] ?></td>
-                                    <td><?= $value['status'] == 1 ? 'Đã duyệt' : 'Đang chờ'?></td>  
+                                    <td><?= $value['trang_thai'] == 1 ? 'Đã duyệt' : 'Đang chờ'?></td>  
 
                                     <td class="text-center">
 

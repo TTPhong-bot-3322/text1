@@ -30,8 +30,8 @@ include_once("./view/layouts/header.php");
                     Thông tin người mua
                 </h5>
                 <div class="mb-3">
-                    <label for="danhmuc" class="form-label">Tên người mua</label>
-                    <input disabled value="<?= $chiTietHoaDon['ten_khach_hang'] ?>" type="text" class="form-control" name="name" id="danhmuc">
+                    <label for="danhmuc" class="form-label">Id người mua</label>
+                    <input disabled value="<?= $chiTietHoaDon['id_nguoi_dung'] ?>" type="text" class="form-control" name="name" id="danhmuc">
                 </div>
                 <div class="card-body">
                     <h5>Danh sách sản phẩm mua</h5>

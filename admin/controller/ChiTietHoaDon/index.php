@@ -1,6 +1,4 @@
 
-
-
 <?php
 include_once './model/sanpham.php';
 include_once './model/hoadon.php';
@@ -16,3 +14,4 @@ if (isset($_GET['id'])) {
     $chiTietHoaDon = getHoaDonById($id);
 }
 include_once './view/chitiethoadon/index.php';
+?>

@@ -20,6 +20,18 @@ if (isset($_GET['action']) && $_GET['action'] != '') {
         case 'quenmk':
             include_once 'Controllers/taikhoan/quenmk.php';
             break;
+        case 'hienthithanhtoan':
+            include_once 'Controllers/thanhtoan/index.php';
+            break;    
+        case 'thanhtoan':
+            include_once 'Controllers/thanhtoan/add.php';
+            break;
+        case 'contact':
+            include_once 'Controllers/contact/index.php';
+            break;
+        // case 'guicontact':
+        //     include_once 'Controllers/contact/add.php';
+        //     break;
         }
 } else {
     include_once 'Controllers/home/index.php';
