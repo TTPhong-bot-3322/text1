@@ -31,7 +31,7 @@ include_once("./view/layouts/header.php");
         <section class="section">
             <div class="card">
                 <div class="card-header">
-                    Danh sách danh mục
+                    Danh Sách Người Dùng
                 </div>
              
                 <div class="card-body">

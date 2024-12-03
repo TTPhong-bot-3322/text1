@@ -25,7 +25,7 @@
                 <div class="sidebar-header">
                     <div class="d-flex justify-content-between">
                         <div class="logo">
-                            <a href="index.html"><img src="./asset/images/logo/logo.png" alt="Logo" srcset=""></a>
+                            <a href="index.php?action=thongke"><img src="./asset/images/logo/logo.png" alt="Logo" srcset=""></a>
                         </div>
                         <div class="toggler">
                             <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
@@ -37,13 +37,13 @@
                         <li class="sidebar-title">Menu</li>
 
                         <li class="sidebar-item  ">
-                            <a href="index.html" class='sidebar-link'>
+                            <a href="index.php?action=thongke" class='sidebar-link'>
                                 <i class="bi bi-grid-fill"></i>
-                                <span>Dashboard</span>
+                                <span>Trang chủ</span>
                             </a>
                         </li>
 
-                        <li class="sidebar-item  active">
+                        <li class="sidebar-item ">
                             <a href="index.php?action=listdanhmuc" class='sidebar-link'>
                                 <i class="bi bi-file-earmark-spreadsheet-fill"></i>
                                 <span>Danh mục</span>

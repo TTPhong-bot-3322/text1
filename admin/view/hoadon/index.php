@@ -28,9 +28,8 @@ include_once("./view/layouts/header.php");
         <section class="section">
             <div class="card">
                 <div class="card-header">
-                    Danh sách danh mục
+                    Danh Sách Hóa Đơn
                 </div>
-                <a href="index.php?action=adddm" class="btn btn-primary">Thêm danh mục</a>
 
                 <div class="card-body">
                     <table class="table table-striped" id="table1">
@@ -39,6 +38,7 @@ include_once("./view/layouts/header.php");
                                 <th>ID</th>
                                 <th>Id khách hàng</th>
                                 <th>Địa chỉ</th>
+                                <th>SDT</th>
                                 <th>Ngày đặt</th>
                                 <th>Tổng tiền</th>
                                 <th>Trạng thái</th>
@@ -49,7 +49,7 @@ include_once("./view/layouts/header.php");
                             <?php foreach ($listhoadon as $key => $value): ?>
                                 <tr>
                                     <td><?= $value['id'] ?></td>
-                                    <td><?= $value['id_nguoi_dung'] ?></td>
+                                    <td><?= $value['ho_ten'] ?></td>
                                     <td><?= $value['dia_chi'] ?></td>
                                     <td><?= $value['creat_at'] ?></td>
                                     <td><?= $value['tong_tien'] ?></td>

@@ -29,9 +29,15 @@ if (isset($_GET['action']) && $_GET['action'] != '') {
         case 'contact':
             include_once 'Controllers/contact/index.php';
             break;
-        // case 'guicontact':
-        //     include_once 'Controllers/contact/add.php';
-        //     break;
+        case 'sanpham':
+            include_once 'Controllers/sanpham/index.php';
+            break;
+        case 'chitietsanpham':
+            include_once 'Controllers/chitietsanpham/index.php';
+            break;
+            case 'binhluan':
+                include_once 'Controllers/binhluan/index.php';
+                break;
         }
 } else {
     include_once 'Controllers/home/index.php';

@@ -48,9 +48,9 @@
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<div class="footer-box pages">
-						<h2 class="widget-title">Pages</h2>
+						<!-- <h2 class="widget-title">Pages</h2> -->
 						<ul>
-							<li><a href="index.html">Home</a></li>
+							<li><a href="index.html">Trang chủ</a></li>
 							<li><a href="about.html">About</a></li>
 							<li><a href="services.html">Shop</a></li>
 							<li><a href="news.html">News</a></li>
