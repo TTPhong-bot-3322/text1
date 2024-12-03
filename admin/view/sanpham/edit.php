@@ -13,13 +13,12 @@ include_once("./view/layouts/header.php");
             <div class="row">
                 <div class="col-12 col-md-6 order-md-1 order-last">
                     <h3>Sửa sản phẩm</h3>
-                    <p class="text-subtitle text-muted">For user to check they list</p>
                 </div>
                 <div class="col-12 col-md-6 order-md-2 order-first">
                     <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Thêm sản phẩm</li>
+                            <li class="breadcrumb-item"><a href="index.html">Trang Chủ</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Sửa sản phẩm</li>
                         </ol>
                     </nav>
                 </div>

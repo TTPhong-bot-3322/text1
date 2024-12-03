@@ -14,8 +14,8 @@ include_once("./Views/layout/header.php");
 							<p class="subtitle">Trải nghiệm với</p>
 							<h1>Camera</h1>
 							<div class="hero-btns">
-								<a href="shop.html" class="boxed-btn">Khám phá ngay</a>
-								<a href="contact.html" class="bordered-btn">Liên hệ với chúng tôi</a>
+								<a href="index.php?action=sanpham" class="boxed-btn">Khám phá ngay</a>
+								<a href="index.php?action=contact" class="bordered-btn">Liên hệ với chúng tôi</a>
 							</div>
 						</div>
 					</div>
@@ -33,8 +33,8 @@ include_once("./Views/layout/header.php");
 							<p class="subtitle">Trải nghiệm với nhiều hình ảnh chất lượng với Camera</p>
 							<h1>100% chính hãng</h1>
 							<div class="hero-btns">
-								<a href="shop.html" class="boxed-btn">Khám phá ngay</a>
-								<a href="contact.html" class="bordered-btn">Liên hệ với chúng tôi</a>
+							<a href="index.php?action=sanpham" class="boxed-btn">Khám phá ngay</a>
+							<a href="index.php?action=contact" class="bordered-btn">Liên hệ với chúng tôi</a>
 							</div>
 						</div>
 					</div>
@@ -52,8 +52,8 @@ include_once("./Views/layout/header.php");
 							<p class="subtitle">Đang có nhiều chương trình khuyến mãi lớn</p>
 							<h1>Nhận mã ưu đãi tháng 12</h1>
 							<div class="hero-btns">
-								<a href="shop.html" class="boxed-btn">Khám phá ngay</a>
-								<a href="contact.html" class="bordered-btn">Liên hệ với chúng tôi</a>
+							<a href="index.php?action=sanpham" class="boxed-btn">Khám phá ngay</a>
+							<a href="index.php?action=contact" class="bordered-btn">Liên hệ với chúng tôi</a>
 							</div>
 						</div>
 					</div>
@@ -131,7 +131,7 @@ include_once("./Views/layout/header.php");
 					</div>
 					<h3><?= $item['ten_san_pham'] ?></h3>
 					<p class="product-price"><span><?= $item['gia'] ?></span> </p>
-					<a href="index.php?action=themgiohang&id=<?=$item['id_sp']?>" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					<a href="index.php?action=themgiohang&id=<?=$item['id_sp']?>" class="cart-btn"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
 				</div>
 			</div>
 			<?php } ?>
@@ -218,7 +218,7 @@ include_once("./Views/layout/header.php");
 					<p>Máy ảnh hay máy chụp hình là một dụng cụ dùng để thu ảnh thành một ảnh tĩnh hay thành một loạt các ảnh 
 					   chuyển động (gọi là phim hay video). Tên camera có gốc từ tiếng La tinh camera obscura nghĩa là "phòng tối", 
 					   từ lý do máy ảnh đầu tiên là một cái phòng tối với vài người làm việc trong đó</p>
-					<a href="about.html" class="boxed-btn mt-4">Xem thêm</a>
+					<a href="index.php?action=about" class="boxed-btn mt-4">Xem thêm</a>
 				</div>
 			</div>
 		</div>
@@ -231,7 +231,7 @@ include_once("./Views/layout/header.php");
 	<div class="container">
 		<h3>Nhận ưu đãi<br> cực lớn <span class="orange-text"> tháng 12 </span></h3>
 		<div class="sale-percent"><span> Giảm  <br> đến</span>50% <span></span></div>
-		<a href="shop.html" class="cart-btn btn-lg">Ghé shop</a>
+		<a href="index.php?action=sanpham" class="cart-btn btn-lg">Ghé shop</a>
 	</div>
 </section>
 <!-- end shop banner -->
@@ -255,16 +255,10 @@ include_once("./Views/layout/header.php");
 						<a href="single-product.html"><img src="<?= $base_url . 'admin/upload/' . $item['hinh_anh'] ?>" alt=""></a>
 					</div>
 					<h3><?= $item['ten_san_pham'] ?></h3>
-					<a href="index.php?action=xemchitietsp&id<?=$item['id_sp']?>" class="cart-btn"> Xem chi tiết</a>
+					<a href="index.php?action=chitietsanpham&id=<?=$item['id_sp']?>" class="cart-btn"><i class="fas fa-shopping-cart"></i>Xem chi tiết sản phẩm</a>
 				</div>
 			</div>
 			<?php } ?>
-		</div>
-		
-		<div class="row">
-			<div class="col-lg-12 text-center">
-				<a href="news.html" class="boxed-btn">More News</a>
-			</div>
 		</div>
 	</div>
 </div>

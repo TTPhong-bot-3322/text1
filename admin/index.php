@@ -37,12 +37,6 @@ if (isset($_GET['action']) && $_GET['action'] != '') {
         case "deletenguoidung":
             include_once 'controller/nguoidung/delete.php';
             break;
-        case "listhoadon":
-            include_once 'controller/hoadon/index.php';
-            break;
-        case "listchitiethoahon":
-            include_once 'controller/ChiTietHoaDon/index.php';
-            break;
         case "listbinhluan":
             include_once 'controller/binhluan/index.php';
             break;
@@ -55,6 +49,10 @@ if (isset($_GET['action']) && $_GET['action'] != '') {
         case "thongke":
             include_once 'controller/thongke/index.php';
             break;
+            case "capnhathoadon":
+                include_once 'controller/ChiTietHoaDon/capnhathoadon.php';
+                break;
+            
     }
 } else {
     include_once 'controller/thongke/index.php';

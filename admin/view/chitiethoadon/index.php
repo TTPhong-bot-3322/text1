@@ -1,4 +1,6 @@
-<?php include_once("./view/layouts/header.php"); ?>
+<?php
+include_once("./view/layouts/header.php");
+?>
 <div id="main">
     <header class="mb-3">
         <a href="#" class="burger-btn d-block d-xl-none">
@@ -12,67 +14,87 @@
                 <div class="col-12 col-md-6 order-md-1 order-last">
                     <h3>Chi tiết hóa đơn</h3>
                 </div>
-                <div class="col-12 col-md-6 order-md-2 order-first">
-                    <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Hóa đơn</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Chi tiết hóa đơn</li>
-                        </ol>
-                    </nav>
-                </div>
             </div>
         </div>
         <section class="section">
             <div class="card">
-                <h5 class="card-header">Thông tin người mua</h5>
-                <div class="mb-3">
-                    <label for="danhmuc" class="form-label">Tên người mua</label>
-                    <input disabled 
-                           value="<?php 
-                           foreach ($listnguoidung as $item) {
-                               if ($item['id_nguoi_dung'] == $chiTietHoaDon['id_nguoi_dung']) {
-                                   echo $item['ten_nguoi_dung'];
-                                   break;
-                               }
-                           } ?>">
-                </div>
-
                 <div class="card-body">
-                    <h5>Danh sách sản phẩm mua</h5>
-                    <table class="table table-striped">
-                        <thead class="table-primary">
-                            <tr>
-                                <th>Id</th>
-                                <th>Id sản phẩm</th>
-                                <th>Tên sản phẩm</th>
-                                <th>Ảnh</th>
-                                <th>Số lượng</th>
-                                <th>Giá</th>
-                                <th>Tổng tiền</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php if (empty($listChiTietHoaDon)) { ?>
+                    <form method="post" action="index.php?action=capnhathoadon">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Tên người nhận</label>
+                            <input disabled value="<?= $chiTietSanPham['ten_san_pham']; ?>" type="text" class="form-control" name="ten"
+                                id="name" aria-describedby="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Địa chỉ người nhận</label>
+                            <input disabled type="text" class="form-control" name="diachi" value="<?= $hoaDonChiTiet['dia_chi']; ?>"
+                                id="diachi" aria-describedby="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Số điện thoại</label>
+                            <input disabled type="text" value="<?= $hoaDonChiTiet['sdt'] ?>" class="form-control" name="sdt" id="sdt"
+                                aria-describedby="name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Tổng tiền hàng (VNĐ)</label>
+                            <input disabled value="<?= $hoaDonChiTiet['tong_tien']-20000 ?>" type="text" class="form-control" value="<?= 1 ?> VNĐ">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Tiền ship (VNĐ)</label>
+                            <input disabled value="20000 " type="text" class="form-control" value="<?= 1 ?> VNĐ">
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Số tiền cần thanh toán (VNĐ)</label>
+                            <input disabled value="<?= $hoaDonChiTiet['tong_tien'] ?>" type="text" class="form-control" value="<?= 1 ?> VNĐ">
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Tình trạng thanh toán</label>
+                            <select name="trang_thai" class="form-select" aria-label="Default select example">
+
+                            <option <?= $hoaDonChiTiet['trang_thai'] == 0 ? 'selected' : '' ?> value="0">Chưa thanh toán</option>
+                                <option <?= $hoaDonChiTiet['trang_thai'] == 1 ? 'selected' : '' ?> value="1">Đã thanh toán</option>
+                                <option <?= $hoaDonChiTiet['trang_thai'] == 2 ? 'selected' : '' ?> value="2">Đã hủy</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-6 order-md-1 order-last">
+                            <h3>Sản phẩm</h3>
+                        </div>
+                        <table class="table">
+
+                        <thead>
                                 <tr>
-                                    <td colspan="7" class="text-center">Không có sản phẩm nào trong hóa đơn này</td>
+                                    <th class="col-2">ID</th>
+                                    <th class="col-2">Tên Sản Phẩm</th>
+                                    <th class="col-2">Số lượng</th>
+                                    <th class="col-2">Ảnh sản phẩm</th>
+                                    <th class="col-2">Giá</th>
+                                    <th class="col-2">Tổng</th>
                                 </tr>
-                            <?php } else {
-                                foreach ($listChiTietHoaDon as $key => $item) { ?>
+                            </thead>
+                            <tbody> 
+                                <?php foreach ($listChiTietHoaDon as $item) { ?>
                                     <tr>
-                                        <td><?= $item['id'] ?></td>
                                         <td><?= $item['id_sp'] ?></td>
                                         <td><?= $item['ten_sp'] ?></td>
-                                        <td><img src="<?= $base_url . 'upload/' . $item['img'] ?>" width="150px"></td>
                                         <td><?= $item['so_luong'] ?></td>
-                                        <td><?= $item['gia'] ?></td>
-                                        <td><?= $item['so_luong'] * $item['gia'] ?></td>
+                                        <td><img width="80px" src="<?= $base_url . 'upload/' . $item['hinh_anh'] ?>" alt=""></td>
+                                        <td><?= number_format($item['gia']) ?> VNĐ</td>
+                                        <td><?= number_format($item['gia'] * $item['so_luong']) ?> VNĐ</td>
                                     </tr>
-                                <?php } 
-                            } ?>
-                        </tbody>
-                    </table>
+                                <?php } ?>
+                            </tbody>
+                        </table>
+                        <input type="hidden" name="id" value="<?= $hoaDonChiTiet['id'] ?>">
+                        <button class="btn btn-primary" name="edit" type="submit">Cập nhật trạng thái</button>
+                    </form>
                 </div>
             </div>
+
         </section>
     </div>
-<?php include_once("./view/layouts/footer.php"); ?>
+
+    <?php
+    include_once("./view/layouts/footer.php");
+    ?>

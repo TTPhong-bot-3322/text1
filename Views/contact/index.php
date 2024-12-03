@@ -20,13 +20,13 @@ include_once("./Views/layout/header.php");
 	<!-- end search arewa -->
 	
 	<!-- breadcrumb-section -->
-	<div class="breadcrumb-section breadcrumb-bg">
+	<div class="breadcrumb-section breadcrumb-bg3">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="breadcrumb-text">
-						<p>Get 24/7 Support</p>
-						<h1>Contact us</h1>
+						<p>Hỗ trợ 24/7</p>
+						<h1>Liên Hệ</h1>
 					</div>
 				</div>
 			</div>
@@ -42,21 +42,20 @@ include_once("./Views/layout/header.php");
 			<div class="row">
 				<div class="col-lg-8 mb-5 mb-lg-0">
 					<div class="form-title">
-						<h2>Have you any question?</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, ratione! Laboriosam est, assumenda. Perferendis, quo alias quaerat aliquid. Corporis ipsum minus voluptate? Dolore, esse natus!</p>
+						<h2>Bạn cần chúng tôi giúp đỡ gì không?</h2>
 					</div>
 				 	<div id="form_status"></div>
 					<div class="contact-form">
                     <form action="index.php?action=contact" method="POST" >
                             <p>
-                                <input type="text" placeholder="Name" name="ten_ng_nhap" >
+                                <input type="text" placeholder="Tên" name="ten_ng_nhap" >
                                 <input type="email" placeholder="Email" name="email" >
                             </p>
                             <p>
-                                <input type="tel" placeholder="Phone" name="phone" >
+                                <input type="tel" placeholder="Số điện thoại" name="phone" >
                             </p>
-                            <p><textarea name="message" cols="30" rows="10" placeholder="Message" required></textarea></p>
-                            <button type="submit" value="Submit" name="nut">Submit</button>
+                            <p><textarea name="message" cols="30" rows="10" placeholder="Nội dung" required></textarea></p>
+							<button type="submit" value="Submit" name="nut" class="btn btn-danger">Gửi</button>
                         </form>
 
 					</div>
@@ -64,16 +63,16 @@ include_once("./Views/layout/header.php");
 				<div class="col-lg-4">
 					<div class="contact-form-wrap">
 						<div class="contact-form-box">
-							<h4><i class="fas fa-map"></i> Shop Address</h4>
-							<p>34/8, East Hukupara <br> Gifirtok, Sadan. <br> Country Name</p>
+							<h4><i class="fas fa-map"></i>Máy Ảnh Nhóm 3</h4>
+							<p>Fpoly<br>Hải Phòng <br>Máy ảnh nhóm 3</p>
 						</div>
 						<div class="contact-form-box">
-							<h4><i class="far fa-clock"></i> Shop Hours</h4>
-							<p>MON - FRIDAY: 8 to 9 PM <br> SAT - SUN: 10 to 8 PM </p>
+							<h4><i class="far fa-clock"></i> Thời Gian</h4>
+							<p>24/7</p>
 						</div>
 						<div class="contact-form-box">
-							<h4><i class="fas fa-address-book"></i> Contact</h4>
-							<p>Phone: +00 111 222 3333 <br> Email: support@fruitkha.com</p>
+							<h4><i class="fas fa-address-book"></i>Liên Hệ</h4>
+							<p>Số điện thoại: +00 111 222 3333 <br> Email: admintdhc@Fpoly.com</p>
 						</div>
 					</div>
 				</div>

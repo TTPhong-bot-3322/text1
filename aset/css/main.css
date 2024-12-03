@@ -500,8 +500,20 @@ a.cart-btn {
   margin-bottom: 80px;
 }
 
-.breadcrumb-bg {
-  background-image: url(../img/breadcrumb-bg.jpg);
+.breadcrumb-bg1 {
+  background-image: url(../img/breadcrumb-bg.webp);
+}
+.breadcrumb-bg2 {
+  background-image: url(../img/DALL·E\ 2024-12-03\ 14.09.28\ -\ A\ minimalist\ contact\ banner\ design\ for\ a\ camera\ sales\ project\,\ featuring\ the\ word\ \'FPOLY\'\ in\ a\ bold\,\ clean\ font.\ A\ modern\ camera\ icon\ is\ integrated\ in.webp);
+}
+.breadcrumb-bg3 {
+  background-image: url(../img/DALL·E\ 2024-12-03\ 14.09.36\ -\ A\ sleek\ design\ for\ a\ camera\ product\ banner\,\ featuring\ a\ professional\ camera\ as\ the\ focal\ point.\ The\ layout\ includes\ space\ for\ product\ details\ with\ the.webp);
+}
+.breadcrumb-bg4 {
+  background-image: url(../img/d3d848cc-37f9-4342-bd6d-592365621569.webp);
+}
+.breadcrumb-bg5 {
+  background-image: url(../img/b5204034-a9e0-4971-a651-dc4ad6f4ea31.webp);
 }
 
 .breadcrumb-text p {
@@ -529,6 +541,7 @@ a.cart-btn {
   padding-top: 200px;
 }
 
+
 .breadcrumb-section:after {
   position: absolute;
   left: 0;
@@ -539,6 +552,7 @@ a.cart-btn {
   background-color: #07212e;
   z-index: -1;
   opacity: 0.8;
+  
 }
 
 /* -----------------------------------------------------------------------------
@@ -549,6 +563,9 @@ a.cart-btn {
 ul.navbar-nav li.nav-item a.nav-link,
 ul.navbar-nav li.nav-item.active a.nav-link {
   color: #051922;
+}
+h2 {
+  text-align: center; /* Căn giữa nội dung */
 }
 
 .top-header-area {
