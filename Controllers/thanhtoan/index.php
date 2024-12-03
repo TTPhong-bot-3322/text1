@@ -1,6 +1,6 @@
 <?php
 include_once('Models/sanpham.php');
-if (isset($_SESSION['giohang'])) {
+if (isset($_SESSION['giohang']) && $_SESSION['giohang'] != []) {
     $listgiohang = $_SESSION['giohang'];
     $tong_tien = 0;
     foreach ($listgiohang as $key => $item) {
@@ -10,10 +10,10 @@ if (isset($_SESSION['giohang'])) {
         $listgiohang[$key]['hinh_anh'] = $sanPhamInfo['hinh_anh'];
         $tong_tien += $sanPhamInfo['gia'] * $item['so_luong'];
     }
-    include_once('Views/cart/index.php');
+    include_once('Views/thanhtoan/index.php');
 } else {
     $script = "<script> 
-    alert('Bạn chưa có gì trong giỏ hàng vui lòng đặt hàng');
+    alert('Giỏ hàng đang trống !!!!!!');
     window.location = 'index.php';
     </script>";
     echo $script;

@@ -28,37 +28,33 @@ if (isset($_GET['action']) && $_GET['action'] != '') {
         case "listhoadon":
             include_once 'controller/hoadon/index.php';
             break;
-        // case "xoaHD":
-        //     include_once 'controller/hoadon/delete.php';
-        //     break;
         case "listchitiethoahon":
             include_once 'controller/ChiTietHoaDon/index.php';
             break;
-            case "listnguoidung":
-                include_once 'controller/nguoidung/index.php';
-                break;
-            case "deletenguoidung":
-                include_once 'controller/nguoidung/delete.php';
-                break;
-                case "listhoadon":
-                    include_once 'controller/hoadon/index.php';
-                    break;
-                // case "xoaHD":
-                //     include_once 'controller/hoadon/delete.php';
-                //     break;
-                case "listchitiethoahon":
-                    include_once 'controller/ChiTietHoaDon/index.php';
-                    break;
-                    case "listbinhluan":
-                        include_once 'controller/binhluan/index.php';
-                        break;
-                    case "deletebinhluan":
-                        include_once 'controller/binhluan/delete.php';
-                        break;
-                        case "thongke":
-                            include_once 'controller/thongke/index.php';
-                            break;
-                        
+        case "listnguoidung":
+            include_once 'controller/nguoidung/index.php';
+            break;
+        case "deletenguoidung":
+            include_once 'controller/nguoidung/delete.php';
+            break;
+        case "listhoadon":
+            include_once 'controller/hoadon/index.php';
+            break;
+        case "listchitiethoahon":
+            include_once 'controller/ChiTietHoaDon/index.php';
+            break;
+        case "listbinhluan":
+            include_once 'controller/binhluan/index.php';
+            break;
+        case "deletebinhluan":
+            include_once 'controller/binhluan/delete.php';
+            break;
+        case "contact":
+            include_once 'controller/contact/index.php';
+            break;
+        case "thongke":
+            include_once 'controller/thongke/index.php';
+            break;
     }
 } else {
     include_once 'controller/thongke/index.php';

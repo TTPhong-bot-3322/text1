@@ -83,19 +83,16 @@
 										<li><a href="single-news.html">Single News</a></li>
 									</ul>
 								</li>
-								<li ><a href="index.php?action=dangnhap">Đăng nhập</a></li>
-								<li><a href="contact.html">Contact</a></li>
-								<li><a href="shop.html">Shop</a>
-									<ul class="sub-menu">
-										<li><a href="shop.html">Shop</a></li>
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="single-product.html">Single Product</a></li>
-										<li><a href="cart.html">Cart</a></li>
-									</ul>
+								<li ><a href="index.php?action=taikhoan">Đăng nhập</a></li>
+								<li><a href="index.php?action=contact">Contact</a></li>
+								<li><a href="index.php?action=sanpham">Shop</a>
 								</li>
 								<li>
 									<div class="header-icons">
-										<a class="shopping-cart" href="index.php?action=listgiohang"><i class="fas fa-shopping-cart"></i></a>
+									<a class="shopping-cart" href="index.php?action=listgiohang">
+									<i class="fas fa-shopping-cart"></i>
+									<span class="cart-count">0</span>
+									</a>
 										<a class="mobile-hide search-bar-icon" href="index.php?action=listSanPham" name="kyw"><i class="fas fa-search"></i></a>
 									</div>
 								</li>

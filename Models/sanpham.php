@@ -41,4 +41,16 @@ function getsanphamganday() {
     $sql = 'select * from san_pham order by create_at DESC limit 6';
     return pdo_query($sql);
 }
-
+function loadall_sp($kyw="", $id_danh_muc=0){
+    $sql= "select * from san_pham where 1";
+    if($kyw!=""){
+        $sql=" and ten_san_pham like '%".$kyw."%'";
+    }
+    if($id_danh_muc>0){
+        $sql="and id_danh_muc = '".$id_danh_muc."'";
+    }
+    $sql = "order by id desc";
+    $listSanPham=listSanPham();
+    return pdo_query($sql);
+}
+?>

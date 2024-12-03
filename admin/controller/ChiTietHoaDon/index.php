@@ -1,6 +1,4 @@
 
-
-
 <?php
 include_once './model/sanpham.php';
 include_once './model/hoadon.php';
@@ -18,3 +16,4 @@ if (isset($_GET['id'])) {
     $listnguoidung = listnguoidung();
 }
 include_once './view/chitiethoadon/index.php';
+?>

@@ -28,41 +28,36 @@ include_once("./view/layouts/header.php");
         <section class="section">
             <div class="card">
                 <div class="card-header">
-                    Danh Sách Hóa Đơn
+                    Danh sách danh mục
                 </div>
+                <!-- <a href="index.php?action=adddm" class="btn btn-primary">Thêm danh mục</a> -->
 
                 <div class="card-body">
                     <table class="table table-striped" id="table1">
                         <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>Id khách hàng</th>
-                                <th>Địa chỉ</th>
-                                <th>SDT</th>
-                                <th>Ngày đặt</th>
-                                <th>Tổng tiền</th>
-                                <th>Trạng thái</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Message</th>
 
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($listhoadon as $key => $value): ?>
+                            <?php foreach ($contact as $item){ ?>
                                 <tr>
-                                    <td><?= $value['id'] ?></td>
-                                    <td><?= $value['ho_ten'] ?></td>
-                                    <td><?= $value['dia_chi'] ?></td>
-                                    <td><?= $value['creat_at'] ?></td>
-                                    <td><?= $value['tong_tien'] ?></td>
-                                    <td><?= $value['trang_thai'] == 1 ? 'Đã duyệt' : 'Đang chờ'?></td>  
-
+                                    <td><?= $item['id_ng_nhap'] ?></td>
+                                    <td><?= $item['ten_ng_nhap'] ?></td>
+                                    <td><?= $item['email'] ?></td>
+                                    <td><?= $item['phone'] ?></td>
+                                    <td><?= $item['message']?></td>
                                     <td class="text-center">
 
-                                        <a href="index.php?action=listchitiethoahon&id=<?= $value['id'] ?>"
-                                            class="btn btn-danger">Xem chi tiết hóa đơn</a>
                                             
                                     </td>
                                 </tr>
-                            <?php endforeach; ?>
+                            <?php } ?>
                         </tbody>
                     </table>
                 </div>

@@ -20,8 +20,24 @@ if (isset($_GET['action']) && $_GET['action'] != '') {
         case 'about':
             include_once 'Controllers/about/index.php';
             break;
-        
-              
+        case 'hienthithanhtoan':
+            include_once 'Controllers/thanhtoan/index.php';
+            break;    
+        case 'thanhtoan':
+            include_once 'Controllers/thanhtoan/add.php';
+            break;
+        case 'contact':
+            include_once 'Controllers/contact/index.php';
+            break;
+        case 'sanpham':
+            include_once 'Controllers/sanpham/index.php';
+            break;
+        case 'chitietsanpham':
+            include_once 'Controllers/chitietsanpham/index.php';
+            break;
+            case 'binhluan':
+                include_once 'Controllers/binhluan/index.php';
+                break;
         }
         
 } else {
