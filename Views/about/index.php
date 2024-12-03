@@ -20,13 +20,13 @@ include_once("./Views/layout/header.php");
 	<!-- end search arewa -->
 	
 	<!-- breadcrumb-section -->
-	<div class="breadcrumb-section breadcrumb-bg">
+	<div class="breadcrumb-section breadcrumb-bg1">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="breadcrumb-text">
-						<p>We sale fresh fruits</p>
-						<h1>About</h1>
+						<p>Chia sẻ kinh nghiệm</p>
+						<h1>Giới Thiệu</h1>
 					</div>
 				</div>
 			</div>
@@ -116,50 +116,52 @@ include_once("./Views/layout/header.php");
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-4 col-md-6">
-					<div class="single-team-item">
+					<div class="col-lg-3 col-md-6">
+						<div class="single-team-item">
 						<div class="team-bg team-bg-2"></div>
-						<h4>Phạm Lâm Thông <span>Nhóm Trưởng </span></h4>
+						<h4>Phạm Lâm Thông <span>Nhóm Trưởng</span></h4>
 						<ul class="social-link-team">
 							<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
 							<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
 							<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
 						</ul>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="single-team-item">
+					<div class="col-lg-3 col-md-6">
+						<div class="single-team-item">
 						<div class="team-bg team-bg-1"></div>
-						<h4> Vũ Văn Đạt <span>Thành Viên</span></h4>
+						<h4>Vũ Văn Đạt <span>Thành Viên</span></h4>
 						<ul class="social-link-team">
 							<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
 							<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
 							<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
 						</ul>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
-					<div class="single-team-item">
+					<div class="col-lg-3 col-md-6">
+						<div class="single-team-item">
 						<div class="team-bg team-bg-3"></div>
-                        <h4> Nguyễn Tam Cường <span>Thành Viên</span></h4>
+						<h4>Nguyễn Tam Cường <span>Thành Viên</span></h4>
 						<ul class="social-link-team">
 							<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
 							<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
 							<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
 						</ul>
+						</div>
 					</div>
-				</div>
-                <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
-					<div class="single-team-item">
+					<div class="col-lg-3 col-md-6">
+						<div class="single-team-item">
 						<div class="team-bg team-bg-4"></div>
-						<h4> Phạm Việt Hoàng <span>Thành Viên</span></h4>
+						<h4>Phạm Việt Hoàng <span>Thành Viên</span></h4>
 						<ul class="social-link-team">
 							<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
 							<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
 							<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
 						</ul>
+						</div>
 					</div>
-				</div>
+					</div>
+
                 
 			</div>
 		</div>
@@ -179,7 +181,7 @@ include_once("./Views/layout/header.php");
 							<div class="client-meta">
 								<h3>Thông <span></span></h3>
 								<p class="testimonial-body">
-									" Sed ut perspiciatis unde omnis iste natus error veritatis et  quasi architecto beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium "
+								"Mỗi bức ảnh không chỉ là một khoảnh khắc được lưu giữ mà còn là cả một câu chuyện đầy cảm xúc đằng sau nó. Để kể câu chuyện ấy một cách trọn vẹn, bạn cần một chiếc máy ảnh chất lượng, đủ tinh tế để ghi lại từng chi tiết nhỏ nhất và đủ mạnh mẽ để biến những cảm xúc ấy thành kỷ niệm mãi mãi."
 								</p>
 								<div class="last-icon">
 									<i class="fas fa-quote-right"></i>
@@ -193,7 +195,7 @@ include_once("./Views/layout/header.php");
 							<div class="client-meta">
 								<h3>Đạt <span></span></h3>
 								<p class="testimonial-body">
-									" Sed ut perspiciatis unde omnis iste natus error veritatis et  quasi architecto beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium "
+								"Cuộc sống là chuỗi những khoảnh khắc không bao giờ lặp lại, và chỉ một cú bấm máy cũng đủ để đóng băng thời gian. Một chiếc máy ảnh không chỉ đơn thuần là công cụ, mà còn là cánh cửa giúp bạn lưu giữ những kỷ niệm đáng giá, từ nụ cười, ánh mắt, đến những khung cảnh đẹp mà bạn từng đi qua."
 								</p>
 								<div class="last-icon">
 									<i class="fas fa-quote-right"></i>
@@ -207,7 +209,7 @@ include_once("./Views/layout/header.php");
 							<div class="client-meta">
 								<h3>Hoàng <span></span></h3>
 								<p class="testimonial-body">
-									" Sed ut perspiciatis unde omnis iste natus error veritatis et  quasi architecto beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium "
+								"Không có bức ảnh nào hoàn hảo mà không có một chiếc máy ảnh tuyệt vời. Chúng tôi tin rằng mỗi khoảnh khắc bạn sống đều đáng được lưu lại một cách chân thực nhất, và đó là lý do những sản phẩm của chúng tôi mang đến sự đột phá, giúp bạn sáng tạo nên những kiệt tác từ chính cuộc sống."
 								</p>
 								<div class="last-icon">
 									<i class="fas fa-quote-right"></i>
@@ -221,7 +223,7 @@ include_once("./Views/layout/header.php");
 							<div class="client-meta">
 								<h3>Cường <span></span></h3>
 								<p class="testimonial-body">
-									" Sed ut perspiciatis unde omnis iste natus error veritatis et  quasi architecto beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium "
+								"Một chiếc máy ảnh không chỉ là thiết bị kỹ thuật số, mà còn là người bạn đồng hành của bạn trên mọi hành trình. Nó giúp bạn nhìn thế giới qua một góc nhìn hoàn toàn khác, khám phá những vẻ đẹp tiềm ẩn và lưu giữ chúng để chia sẻ cùng những người thân yêu. Hãy để máy ảnh cùng bạn ghi dấu cuộc đời."
 								</p>
 								<div class="last-icon">
 									<i class="fas fa-quote-right"></i>

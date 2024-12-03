@@ -1,9 +1,9 @@
 <?php
 include_once 'pdo.php';
 
-function addHoaDon($tong_tien, $ho_ten, $dia_chi, $sdt)
+function addHoaDon($tong_tien, $ten_nguoi_dung, $dia_chi, $sdt, $hinh_thuc_thanh_toan)
 {
-    $sql = "INSERT INTO hoa_don (  tong_tien, ho_ten, dia_chi, sdt) VALUES('$tong_tien', '$ho_ten', '$dia_chi', '$sdt')";
+    $sql = "INSERT INTO hoa_don (  tong_tien, ten_nguoi_dung, dia_chi, sdt, hinh_thuc_thanh_toan) VALUES('$tong_tien', '$ten_nguoi_dung', '$dia_chi', '$sdt','$hinh_thuc_thanh_toan')";
     return pdo_execute_return_id($sql);
 }
 

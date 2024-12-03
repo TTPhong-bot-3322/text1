@@ -1,13 +1,13 @@
 <?php
 include_once("./Views/layout/header.php");
 ?>
-	<div class="breadcrumb-section breadcrumb-bg">
+	<div class="breadcrumb-section breadcrumb-bg2">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="breadcrumb-text">
-						<p>Fresh and Organic</p>
-						<h1>Shop</h1>
+						<p>Các Máy Ảnh Chụp Đẹp Nhất Trên Thị Trường</p>
+						<h1>Sản Phẩm</h1>
 					</div>
 				</div>
 			</div>
@@ -21,7 +21,9 @@ include_once("./Views/layout/header.php");
 
 			<div class="row">
                 <div class="col-md-12">
+				<h2><span class="orange-text">Hãng</span> Sản Phẩm</h2>
                     <div class="product-filters">
+						
                     <ul>
                         <?php foreach ($listDanhMuc as $item): ?>
                             <li class="<?= isset($_GET['id_danh_muc']) && $_GET['id_danh_muc'] == $item['id'] ? 'active' : '' ?>">
@@ -34,7 +36,9 @@ include_once("./Views/layout/header.php");
                     </div>
                 </div>
             </div>
+			<h2><span class="orange-text">Sản</span> Phẩm</h2>
 			<div class="row product-lists">
+				
     <?php foreach ($listSanPham as $item): ?>
         <div class="col-lg-4 col-md-6 text-center strawberry">
             <div class="single-product-item">
@@ -46,12 +50,12 @@ include_once("./Views/layout/header.php");
                 <h3><?= $item['ten_san_pham'] ?></h3>
                 <p class="product-price"><?= number_format($item['gia']) ?> VNĐ</p>
 				<a href="index.php?action=themgiohang&id=<?=$item['id_sp']?>" class="cart-btn"><i class="fas fa-shopping-cart"></i> Thêm vào giỏ</a>
-				<a href="index.php?action=chitietsanpham&id=<?=$item['id_sp']?>" class="cart-btn"><i class="fas fa-shopping-cart"></i> Chi tiết</a>
+				<a href="index.php?action=chitietsanpham&id=<?=$item['id_sp']?>" class="cart-btn"> Chi tiết ></a>
             </div>
         </div>
     <?php endforeach; ?>
 </div>
-
+</div>
 	<!-- logo carousel -->
 	<div class="logo-carousel-section">
 		<div class="container">

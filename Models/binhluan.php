@@ -24,7 +24,7 @@ function deletebinhluan($id)
     // Gọi hàm `pdo_execute` với tham số đúng định dạng
     pdo_execute($sql, $id);
 }
-function insert_binhluan($id_sp,$id_khach_hang,$noi_dung) {
-    $sql = "insert into taikhoan(id_sp,id_khach_hang,noi_dung) values('$id_sp','$id_khach_hang','$noi_dung')";
+function insert_binhluan($id_sp,$ten_nguoi_dung,$noi_dung) {
+    $sql = "insert into binh_luan(id_sp,ten_nguoi_dung,noi_dung) values('$id_sp','$ten_nguoi_dung','$noi_dung')";
     pdo_execute($sql);
 }

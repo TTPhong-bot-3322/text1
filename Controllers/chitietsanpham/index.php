@@ -6,7 +6,7 @@ if (isset($_GET['id'])) {
     $idSanPham = $_GET['id'];
     // Gọi hàm để lấy thông tin sản phẩm từ database
     $sanPhamInfo = getSanPhamById($idSanPham);
-
+    $listSanPham = listSanPham();
     // Kiểm tra xem sản phẩm có tồn tại không
     if ($sanPhamInfo) {
         $listchitietsanpham[] = $sanPhamInfo;
@@ -16,6 +16,14 @@ if (isset($_GET['id'])) {
 } else {
     $listchitietsanpham = [];
 }
+include_once('Models/binhluan.php');
 
-// Gửi dữ liệu đến view
+// Lấy danh sách bình luận theo sản phẩm
+$listBinhLuan = listBinhLuan($id_sp);
+
+// Hàm xử lý thêm bình luận
+
+
+// Bao gồm giao diện chi tiết sản phẩm
 include_once('Views/chitietsanpham/index.php');
+?>

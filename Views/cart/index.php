@@ -19,13 +19,13 @@ include_once("./Views/layout/header.php");
 <!-- end search arewa -->
 
 <!-- breadcrumb-section -->
-<div class="breadcrumb-section breadcrumb-bg">
+<div class="breadcrumb-section breadcrumb-bg4">
 <div class="container">
 	<div class="row">
 		<div class="col-lg-8 offset-lg-2 text-center">
 			<div class="breadcrumb-text">
-				<p>Fresh and Organic</p>
-				<h1>Cart</h1>
+				<p>Mang các thứ vào giỏ</p>
+				<h1>Giỏ Hàng</h1>
 			</div>
 		</div>
 	</div>
@@ -47,7 +47,7 @@ include_once("./Views/layout/header.php");
                                     <th class="product-name">Tên sản phẩm</th>
 									<th class="product-price">Giá</th>
 									<th class="product-quantity">Số lượng</th>
-                                    <th>Tổng</th>
+                                    <th class="product-tatel">Tổng</th>
 								</tr>
 					</thead>
 					<tbody>
@@ -77,12 +77,12 @@ include_once("./Views/layout/header.php");
 					</thead>
 				<tbody>
 					<tr class="total-data">
-					<td><?= number_format($tong_tien) ?></td>
+					<td><?= number_format($tong_tien) ?>VNĐ</td>
 					</tr>
 					</tbody>
 				</table>
 				<div class="cart-buttons">
-				<a href="http://laptrinhweb11/" class="boxed-btn">Đặt thêm</a>
+				<a href="index.php?action=sanpham" class="boxed-btn">Đặt thêm</a>
 				<a href="index.php?action=hienthithanhtoan" class="boxed-btn black">Thanh toán</a>
 				</div>
 			</div>

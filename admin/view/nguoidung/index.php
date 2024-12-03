@@ -1,6 +1,4 @@
-<?php
-include_once("./view/layouts/header.php");
-?>
+
 <?php
 include_once("./view/layouts/header.php");
 ?>
@@ -15,14 +13,13 @@ include_once("./view/layouts/header.php");
         <div class="page-title">
             <div class="row">
                 <div class="col-12 col-md-6 order-md-1 order-last">
-                    <h3>DataTable</h3>
-                    <p class="text-subtitle text-muted">For user to check they list</p>
+                    <h3>Tài Khoản</h3>
                 </div>
                 <div class="col-12 col-md-6 order-md-2 order-first">
                     <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">DataTable</li>
+                            <li class="breadcrumb-item"><a href="index.html">Trang Chủ</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Tài Khoản</li>
                         </ol>
                     </nav>
                 </div>
@@ -31,7 +28,7 @@ include_once("./view/layouts/header.php");
         <section class="section">
             <div class="card">
                 <div class="card-header">
-                    Danh Sách Người Dùng
+                    Danh Sách Tài Khoản
                 </div>
              
                 <div class="card-body">
@@ -56,7 +53,7 @@ include_once("./view/layouts/header.php");
                                     <td><?= ($value['role'] == 1) ? 'admin' : 'người dùng' ?></td>
 
                                     <td>
-                                    <a class="btn btn-secondary" href="index.php?action=deletenguoidung&id_nguoi_dung=<?=$value['id_nguoi_dung']?>" onclick="return confirm('Bạn có chắc muốn xóa bình luận này?');">Xóa</a>
+                                    <a class="btn btn-secondary" href="index.php?action=deletenguoidung&id_nguoi_dung=<?=$value['id_nguoi_dung']?>" onclick="return confirm('Bạn có chắc muốn xóa tài khoản này?');">Xóa</a>
 
                                     </td>
                                 </tr>
@@ -75,6 +72,3 @@ include_once("./view/layouts/header.php");
     include_once("./view/layouts/footer.php");
     ?>
 
-<?php
-    include_once("./view/layouts/footer.php");
-    ?>
