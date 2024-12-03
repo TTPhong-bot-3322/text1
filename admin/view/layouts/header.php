@@ -76,6 +76,13 @@
                                 <span>Bình luận</span>
                             </a>
                         </li>
+                        <li class="sidebar-item  ">
+
+                            <a href="index.php?action=contact" class='sidebar-link'>
+                                <i class="bi bi-file-earmark-spreadsheet-fill"></i>
+                                <span>Liên hệ</span>
+                            </a>
+                        </li>
 
                     </ul>
                 </div>

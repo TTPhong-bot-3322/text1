@@ -53,5 +53,4 @@ function loadall_sp($kyw="", $id_danh_muc=0){
     $listSanPham=listSanPham();
     return pdo_query($sql);
 }
-
-
+?>

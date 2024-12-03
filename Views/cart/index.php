@@ -67,7 +67,6 @@ include_once("./Views/layout/header.php");
 				</table>
 			</div>
 		</div>
-
 		<div class="col-lg-4">
 			<div class="total-section">
 				<table class="total-table">
@@ -84,7 +83,7 @@ include_once("./Views/layout/header.php");
 				</table>
 				<div class="cart-buttons">
 				<a href="http://laptrinhweb11/" class="boxed-btn">Đặt thêm</a>
-				<a href="checkout.html" class="boxed-btn black">Mua</a>
+				<a href="index.php?action=hienthithanhtoan" class="boxed-btn black">Thanh toán</a>
 				</div>
 			</div>
 		</div>

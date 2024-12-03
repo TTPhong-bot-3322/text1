@@ -84,7 +84,7 @@
 									</ul>
 								</li>
 								<li ><a href="index.php?action=taikhoan">Đăng nhập</a></li>
-								<li><a href="contact.html">Contact</a></li>
+								<li><a href="index.php?action=contact">Contact</a></li>
 								<li><a href="index.php?action=sanpham">Shop</a>
 								</li>
 								<li>
