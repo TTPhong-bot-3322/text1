@@ -14,16 +14,17 @@ if (isset($_POST['thanhtoan'])) {
     // foreach ($listnguoidung as $item) {
     //     echo "<option value='" . $item['id_nguoi_dung'] . "'>" . $item['ten_nguoi_dung'] . "</option>";
     // }    
-    $ho_ten = $_POST['ho_ten']; 
+    $ten_nguoi_dung = $_POST['ten_nguoi_dung']; 
     $dia_chi = $_POST['dia_chi'];
     $sdt = $_POST['sdt'];
+    $hinh_thuc = $_POST['hinh_thuc_thanh_toan'];
     $tong_tien += 20000;
     $id_khach_hang = 0;
     if (!isset($_SESSION['giohang']) || empty($_SESSION['giohang'])) {
         echo "<script>alert('Giỏ hàng của bạn đang trống!'); window.location = 'index.php';</script>";
         exit();
     }    
-    $idHoaDon = addHoaDon($tong_tien, $ho_ten, $dia_chi, $sdt);
+    $idHoaDon = addHoaDon($tong_tien, $ten_nguoi_dung, $dia_chi, $sdt ,$hinh_thuc_thanh_toan);
     foreach ($listgiohang as $item) {
         addChiTietHoaDon($idHoaDon, $item['id'], $item['gia'], $item['so_luong']);
     }

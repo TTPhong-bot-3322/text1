@@ -15,7 +15,11 @@ function dangnhap() {
             <script>
                 document.addEventListener('DOMContentLoaded', () => {
                     setTimeout(() => {
+<<<<<<< HEAD
                         window.location.href='http://localhost/tex1/text1/index.php';
+=======
+                        window.location.href='/index.php';
+>>>>>>> 2306fb8 (sửa tất cả nội dung người dùng và admin vàbinhluan)
                     }, 2000);
                 });
             </script>"; 

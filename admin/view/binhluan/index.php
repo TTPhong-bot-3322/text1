@@ -13,14 +13,13 @@ include_once("./view/layouts/header.php");
         <div class="page-title">
             <div class="row">
                 <div class="col-12 col-md-6 order-md-1 order-last">
-                    <h3>DataTable</h3>
-                    <p class="text-subtitle text-muted">For user to check their list</p>
+                    <h3>Bình Luận</h3>
                 </div>
                 <div class="col-12 col-md-6 order-md-2 order-first">
                     <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">DataTable</li>
+                            <li class="breadcrumb-item"><a href="index.html">Trang Chủ</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Bình Luận</li>
                         </ol>
                     </nav>
                 </div>
@@ -61,16 +60,7 @@ include_once("./view/layouts/header.php");
                                         }
                                         ?>
                                     </td>
-                                    <td>
-                                        <?php 
-                                        foreach ($listnguoidung as $ng) {
-                                            if ($ng['id_nguoi_dung'] == $value['id_nguoi_dung']) { // Sửa so sánh
-                                                echo $ng['ten_nguoi_dung'];
-                                                break; // Ngừng lặp nếu tìm thấy
-                                            }
-                                        }
-                                        ?>
-                                    </td>
+                                    <td><?= $value['ten_nguoi_dung'] ?></td>
                                     <td><?= $value['noi_dung'] ?></td>
                                     <td><?= $value['ngay_binh_luan'] ?></td>
                                     <td>

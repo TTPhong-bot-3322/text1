@@ -35,9 +35,9 @@ if (isset($_GET['action']) && $_GET['action'] != '') {
         case 'chitietsanpham':
             include_once 'Controllers/chitietsanpham/index.php';
             break;
-            case 'binhluan':
-                include_once 'Controllers/binhluan/index.php';
-                break;
+        case 'addbinhluan':
+            include_once 'Controllers/binhluan/add.php';
+            break;
         }
         
 } else {

@@ -32,17 +32,20 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-6">
 					<div class="footer-box about-widget">
-						<h2 class="widget-title">About us</h2>
-						<p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+						<h2 class="widget-title">Giới thiệu</h2>
+						<p>Sản phẩm web bán máy ảnh thuộc về nhóm 3 gồm có 4 thành viên rất đẹp trai và ngầu đét</p>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<div class="footer-box get-in-touch">
-						<h2 class="widget-title">Get in Touch</h2>
+						<h2 class="widget-title">Địa chỉ sản xuất</h2>
 						<ul>
-							<li>34/8, East Hukupara, Gifirtok, Sadan.</li>
-							<li>support@fruitkha.com</li>
-							<li>+00 111 222 3333</li>
+							<li>126 Mương Cầu Tre, Trường Cao Đẳng FPT </li>
+							<li>adminthong@gmail.com</li>
+							<li>admindat@gmail.com</li>
+							<li>admincuong@gmail.com</li>
+							<li>adminhoang@gmail.com</li>
+							<li>+84999999999</li>
 						</ul>
 					</div>
 				</div>
@@ -50,22 +53,21 @@
 					<div class="footer-box pages">
 						<!-- <h2 class="widget-title">Pages</h2> -->
 						<ul>
-							<li><a href="index.html">Trang chủ</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="services.html">Shop</a></li>
-							<li><a href="news.html">News</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="index.php?action=index">Trang chủ</a></li>
+							<li><a href="index.php?action=about">Giới thiệu</a></li>
+							<li><a href="index.php?action=sanpham">Sản phẩm</a></li>
+							<li><a href="index.php?action=contact">Liên hệ</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<div class="footer-box subscribe">
-						<h2 class="widget-title">Subscribe</h2>
-						<p>Subscribe to our mailing list to get the latest updates.</p>
-						<form action="index.html">
-							<input type="email" placeholder="Email">
-							<button type="submit"><i class="fas fa-paper-plane"></i></button>
-						</form>
+						<h2 class="widget-title">Các nhà hỗ trợ và đầu tư</h2>
+						<p>Sùng A Khánh</p>
+						<p>Nguyễn A Nam</p>
+						<p>Nguyễn A Chiến</p>
+						<p>Nguyễn A Liêm</p>
+						<p>Nguyễn A Tuấn</p>
 					</div>
 				</div>
 			</div>
@@ -78,8 +80,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-12">
-					<p>Copyrights &copy; 2019 - <a href="https://imransdesign.com/">Imran Hossain</a>,  All Rights Reserved.<br>
-						Distributed By - <a href="https://themewagon.com/">Themewagon</a>
+					<p>Cảm ơn mọi người đã vào xem sản phẩm của nhóm 3
 					</p>
 				</div>
 				<div class="col-lg-6 text-right col-md-12">

@@ -6,13 +6,13 @@ include_once './model/nguoidung.php';
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
+    $hoaDonChiTiet = getHoaDonById($id);
     $listChiTietHoaDon = listChiTietHoaDon($id);
     foreach ($listChiTietHoaDon as $key => $item) {
         $chiTietSanPham = getSanPhamById($item['id_sp']);
         $listChiTietHoaDon[$key]['ten_sp'] = $chiTietSanPham['ten_san_pham'];
-        $listChiTietHoaDon[$key]['img'] = $chiTietSanPham['hinh_anh'];
+        $listChiTietHoaDon[$key]['hinh_anh'] = $chiTietSanPham['hinh_anh'];
     }
-    $chiTietHoaDon = getHoaDonById($id);
     $listnguoidung = listnguoidung();
 }
 include_once './view/chitiethoadon/index.php';

@@ -28,6 +28,9 @@ function totalIncome() {
     $result = pdo_query_one($sql);
     return $result['total_income'] ?: 0;  // Trả về tổng doanh thu hoặc 0 nếu không có hóa đơn nào đã thanh toán
 }
+function changeStatus($id, $trang_thai) {
+    $sql = "UPDATE hoa_don SET trang_thai = ? WHERE id = ?";
+    return pdo_execute($sql, $trang_thai, $id);
+}
 
 
-?>
