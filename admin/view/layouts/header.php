@@ -1,3 +1,12 @@
+<?php
+ob_start();
+session_start();
+if (isset($_SESSION['admin'])){
+    $admin = $_SESSION['admin'];
+} else {
+    header("location: login.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,10 +32,13 @@
         <div id="sidebar" class="active">
             <div class="sidebar-wrapper active">
                 <div class="sidebar-header">
-                    <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-between">
                         <div class="logo">
-                            <a href="index.php?action=thongke"><img src="./asset/images/logo/logo.png" alt="Logo" srcset="">Admin</a>
+
+                            <a href="index.php?action=thongke">Admin</a>
+
                         </div>
+                       
                         <div class="toggler">
                             <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
                         </div>

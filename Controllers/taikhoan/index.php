@@ -15,7 +15,11 @@ function dangnhap() {
             <script>
                 document.addEventListener('DOMContentLoaded', () => {
                     setTimeout(() => {
+                        window.location.href='http://localhost/Duan1/text1/index.php';
+
+
                         window.location.href='/index.php';
+
                     }, 2000);
                 });
             </script>"; 

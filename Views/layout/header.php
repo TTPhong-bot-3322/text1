@@ -59,22 +59,41 @@
 						<!-- menu start -->
 						<nav class="main-menu">
 							<ul>
-								<li ><a href="index.php">Trang chủ</a></li>
-								<li><a href="index.php?action=about">Giới thiệu</a></li>
-								<li><a href="index.php?action=sanpham">Sản phẩm</a>	
-								<li><a href="index.php?action=contact">Liên hệ</a></li>
-							<li>
 
+								<li class="current-list-item"><a href="index.php?axtion=">Trang chủ</a>
+								</li>
+								<li><a href="index.php?action=about">Giới thiệu</a>
+								</li>
+								<li><a href="index.php?action=sanpham">Sản phẩm</a>
+								</li>
+								<li><a href="index.php?action=contact">Liên hệ</a>
 								<li>
 									<div class="header-icons">
-									<a class="shopping-cart" href="index.php?action=listgiohang"><i class="fas fa-shopping-cart"></i></a>
-									<a class="mobile-hide search-bar-icon" href="index.php?action=dangnhap" name="dangnhap">
+									<a class="shopping-cart" href="index.php?action=listgiohang">
+									<i class="fas fa-shopping-cart"></i>
+									<span class="cart-count">0</span>
+									</a>
+									<?php
+									$checkuser = isset($_SESSION['ten_nguoi_dung']);
+										?>
+										<a class="mobile-hide search-bar-icon" href="index.php?action=dangnhap" name="dangnhap">
 											<i class="fas fa-user"></i>
 										</a>
-							</li>
+
+										<?php if ($checkuser): ?>
+											<a class="mobile-hide "  name="dangxuat">
+												<span>Xin chào, <?php echo htmlspecialchars($_SESSION['ten_nguoi_dung']); ?></span>
+											</a>
+											
+										<?php endif; ?>
+									</div>
+								</li>
+
+
 							</ul>
 						</nav>
-						<a class="mobile-show search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+						
+								</li>
 						<div class="mobile-menu"></div>
 						<!-- menu end -->
 					</div>
