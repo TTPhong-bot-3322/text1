@@ -22,6 +22,3 @@ function insert_nguoidung($email,$ten_nguoi_dung,$mat_khau) {
 function checkuser($ten_nguoi_dung,$mat_khau) {
     $sql = "select * from nguoi_dung where ten_nguoi_dung='".$ten_nguoi_dung."' AND mat_khau='".$mat_khau."'";
     return  pdo_query_one($sql);
-    
-}
-

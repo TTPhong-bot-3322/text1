@@ -34,7 +34,9 @@ if (isset($_SESSION['admin'])){
                 <div class="sidebar-header">
                 <div class="d-flex justify-content-between">
                         <div class="logo">
+
                             <a href="index.php?action=thongke">Admin</a>
+
                         </div>
                        
                         <div class="toggler">

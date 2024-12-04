@@ -59,6 +59,7 @@
 						<!-- menu start -->
 						<nav class="main-menu">
 							<ul>
+
 								<li class="current-list-item"><a href="index.php?axtion=">Trang chủ</a>
 								</li>
 								<li><a href="index.php?action=about">Giới thiệu</a>
@@ -87,6 +88,7 @@
 										<?php endif; ?>
 									</div>
 								</li>
+
 
 							</ul>
 						</nav>

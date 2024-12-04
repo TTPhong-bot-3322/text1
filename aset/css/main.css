@@ -543,6 +543,7 @@ a.cart-btn {
   padding-top: 200px;
 }
 
+
 .breadcrumb-section:after {
   position: absolute;
   left: 0;
@@ -553,6 +554,7 @@ a.cart-btn {
   background-color: #07212e;
   z-index: -1;
   opacity: 0.8;
+  
 }
 
 /* -----------------------------------------------------------------------------
