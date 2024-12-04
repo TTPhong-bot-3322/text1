@@ -25,6 +25,14 @@ if (isset($_GET['id'])) {
             ];
         }
     }
+
+    // Tính tổng số lượng sản phẩm
+    $tongSanPham = 0;
+    foreach ($_SESSION['giohang'] as $item) {
+        $tongSanPham += $item['so_luong'];
+    }
+    $_SESSION['tong_san_pham'] = $tongSanPham;
+    // Redirect về danh sách giỏ hàng
     $script = "<script> 
     window.location = 'index.php?action=listgiohang';
     </script>";

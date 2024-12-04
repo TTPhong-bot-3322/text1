@@ -6,7 +6,7 @@ if (isset($_POST['ten_nguoi_dung']) && isset($_POST['mat_khau'])) {
     $mat_khau = $_POST['mat_khau'];
     $checkUser = userLogin($ten_nguoi_dung,$mat_khau);
 
-    if ($checkUser && $checkUser['role'] == 0) {
+    if ($checkUser && $checkUser['role'] == 1) {
         $_SESSION['admin']['ten_nguoi_dung'] = $ten_nguoi_dung;
         header('location: index.php');
         exit();
