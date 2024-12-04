@@ -15,9 +15,7 @@ function dangky() {
                 <script>
                     document.addEventListener('DOMContentLoaded', () => {
                         setTimeout(() => {
-
-                            window.location.href='http://localhost/Duan1/text1/index.php?action=dangnhap';
-
+                            window.location.href='http://laptrinhweb11/index.php?action=dangnhap';
                         }, 2000);
                     });
                 </script>"; 

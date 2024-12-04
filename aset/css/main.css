@@ -515,9 +515,7 @@ a.cart-btn {
 .breadcrumb-bg5 {
   background-image: url(../img/b5204034-a9e0-4971-a651-dc4ad6f4ea31.webp);
 }
-.breadcrumb-bg6 {
-  background-image: url(../img/bl.webp);
-}
+
 .breadcrumb-text p {
   color: #f28123;
   font-weight: 700;
@@ -2584,11 +2582,14 @@ thead {
   border-bottom: 1px solid #eee;
 }
 
+
+
 tr.table-head-row th {
   border-right: 1px solid #efefef;
   padding: 15px;
   font-weight: 500;
   text-align: center;
+  
 }
 
 tr.table-head-row th:last-child {
@@ -2596,6 +2597,7 @@ tr.table-head-row th:last-child {
   display: flex;
   flex-wrap: wrap;
   margin: -10px;
+
 }
 
 .cart-table-wrap tbody tr td {

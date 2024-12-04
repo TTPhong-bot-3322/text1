@@ -19,6 +19,11 @@ function insert_nguoidung($email,$ten_nguoi_dung,$mat_khau) {
     pdo_execute($sql);
 }
 // File: Models/nguoidung.php
-function checkuser($ten_nguoi_dung,$mat_khau) {
-    $sql = "select * from nguoi_dung where ten_nguoi_dung='".$ten_nguoi_dung."' AND mat_khau='".$mat_khau."'";
-    return  pdo_query_one($sql);
+function checkuser($ten_nguoi_dung, $mat_khau) {
+    // Sử dụng prepared statement để chống SQL Injection
+    $sql = "SELECT * FROM nguoi_dung WHERE ten_nguoi_dung = ? AND mat_khau = ?";
+    
+    // Giả sử bạn có hàm pdo_query_one với prepared statement
+    return pdo_query_one($sql, $ten_nguoi_dung, $mat_khau);
+}
+
