@@ -41,6 +41,7 @@ include_once("./view/layouts/header.php");
                                 <th>Số điện thoại</th>
                                 <th>Ngày đặt</th>
                                 <th>Tổng tiền</th>
+                                <th>Hình thức</th>
                                 <th>Trạng thái</th>
 
                             </tr>
@@ -55,17 +56,26 @@ include_once("./view/layouts/header.php");
                                     <td><?= $value['creat_at'] ?></td>
                                     <td><?= $value['tong_tien'] ?></td>
                                     <td>
+                                        <?php  
+                                        if ($value['hinh_thuc_thanh_toan'] == 0) {
+                                            echo 'Tiền mặt';
+                                        } elseif ($value['hinh_thuc_thanh_toan'] == 1) {
+                                            echo 'Online';
+                                        } 
+                                        ?>
+                                    </td>
+
+                                    <td>
                                         <?php
-                                            if ($value['trang_thai'] === 0) {
-                                                echo 'Chưa thanh toán';
+                                            if ($value['trang_thai'] == 0) {
+                                                echo 'Chưa thanh toán'; 
                                             } elseif ($value['trang_thai'] == 1) {
-                                                echo 'Đã thanh toán';
-                                            } else {
-                                                echo 'Đã hủy';
+                                                echo 'Đã thanh toán'; 
                                             }
                                         ?>
                                     </td>
 
+                                    
                                     <td class="text-center">
 
                                         <a href="index.php?action=listchitiethoahon&id=<?= $value['id'] ?>"

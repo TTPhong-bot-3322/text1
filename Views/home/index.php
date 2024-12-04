@@ -130,7 +130,7 @@ include_once("./Views/layout/header.php");
 						<a href="single-product.html"><img src="<?= $base_url . 'admin/upload/' . $item['hinh_anh'] ?>" alt=""></a>
 					</div>
 					<h3><?= $item['ten_san_pham'] ?></h3>
-					<p class="product-price"><span><?= $item['gia'] ?></span> </p>
+					<p class="product-price"><span><?= number_format($item['gia']) ?>VNĐ</span></p>
 					<a href="index.php?action=themgiohang&id=<?=$item['id_sp']?>" class="cart-btn"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
 				</div>
 			</div>

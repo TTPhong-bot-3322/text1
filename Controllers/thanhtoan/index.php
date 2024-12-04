@@ -10,8 +10,8 @@ if (isset($_SESSION['giohang']) && $_SESSION['giohang'] != []) {
         $listgiohang[$key]['hinh_anh'] = $sanPhamInfo['hinh_anh'];
         $tong_tien += $sanPhamInfo['gia'] * $item['so_luong'];
     }
+    $_SESSION['tong_san_pham'] = 0;
     include_once('Views/thanhtoan/index.php');
-    aa
 } else {
     $script = "<script> 
     alert('Giỏ hàng đang trống !!!!!!');
