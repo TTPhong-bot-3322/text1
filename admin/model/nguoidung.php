@@ -20,3 +20,8 @@ function countNguoiDung() {
     $result = pdo_query_one($sql);
     return $result['total'];  // Trả về tổng số người dùng
 }
+
+function userLogin($ten_nguoi_dung, $mat_khau)
+{
+    return pdo_query_one("SELECT * FROM nguoi_dung WHERE `ten_nguoi_dung` = '$ten_nguoi_dung' AND `mat_khau` = '$mat_khau'");
+}

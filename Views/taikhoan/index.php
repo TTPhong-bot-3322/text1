@@ -48,7 +48,7 @@ include_once("./Views/layout/header.php");
                           </div>
                           <button type="submit"  name="dangnhap" class="btn btn-warning">Đăng nhập</button>
 						  <button type="button" class="btn btn-warning" onclick="window.location.href='index.php?action=dangky'">Đăng Ký</button>
-                          
+                          <button type="button" class="btn btn-warning" onclick="window.location.href='admin/login.php'">Quản Lý</button>
                         </form>
                       </div>                    
                   </div>

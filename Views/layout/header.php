@@ -59,7 +59,7 @@
 						<!-- menu start -->
 						<nav class="main-menu">
 							<ul>
-								<li class="current-list-item"><a href="#">Trang chủ</a>
+								<li class="current-list-item"><a href="index.php?axtion=">Trang chủ</a>
 									<!-- <ul class="sub-menu">
 										<li><a href="index.html">Static Home</a></li>
 										<li><a href="index_2.html">Slider Home</a></li>
@@ -83,7 +83,7 @@
 										<li><a href="single-news.html">Single News</a></li>
 									</ul>
 								</li>
-								<li ><a href="index.php?action=taikhoan">Đăng nhập</a></li>
+								<li ><a href="index.php?action=dangnhap">Đăng nhập</a></li>
 								<li><a href="index.php?action=contact">Contact</a></li>
 								<li><a href="index.php?action=sanpham">Shop</a>
 								</li>
@@ -93,13 +93,26 @@
 									<i class="fas fa-shopping-cart"></i>
 									<span class="cart-count">0</span>
 									</a>
-										<a class="mobile-hide search-bar-icon" href="index.php?action=listSanPham" name="kyw"><i class="fas fa-search"></i></a>
+									<?php
+									$checkuser = isset($_SESSION['ten_nguoi_dung']);
+										?>
+										<a class="mobile-hide search-bar-icon" href="index.php?action=dangnhap" name="dangnhap">
+											<i class="fas fa-user"></i>
+										</a>
+
+										<?php if ($checkuser): ?>
+											<a class="mobile-hide "  name="dangxuat">
+												<span>Xin chào, <?php echo htmlspecialchars($_SESSION['ten_nguoi_dung']); ?></span>
+											</a>
+											
+										<?php endif; ?>
 									</div>
 								</li>
 
 							</ul>
 						</nav>
-						<a class="mobile-show search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+						
+								</li>
 						<div class="mobile-menu"></div>
 						<!-- menu end -->
 					</div>
