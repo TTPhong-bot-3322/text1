@@ -7,13 +7,8 @@ body {
 }
 #auth #auth-right {
   height: 100%;
-<<<<<<< HEAD
-  background: url(../../images/bg/4853433.jpg),
-    linear-gradient(90deg, #5ccaf9, #5ccaf9);
-=======
   background: url(../../images/logo/cl.webp),
-    linear-gradient(90deg, #2d499d, #3f5491);
->>>>>>> dddcb17 (hoang lam taikhoan)
+    linear-gradient(90deg, #5ccaf9, #5ccaf9);
 }
 #auth #auth-left {
   padding: 5rem 8rem;

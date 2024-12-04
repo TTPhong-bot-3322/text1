@@ -62,11 +62,6 @@ if (isset($_POST['ten_nguoi_dung']) && isset($_POST['mat_khau'])) {
         </div>
         <div class="col-lg-7 d-none d-lg-block">
             <div id="auth-right">
-<<<<<<< HEAD
-
-=======
-                    <img src="./admin/asset/images/logo/cl.webp" alt="">
->>>>>>> dddcb17 (hoang lam taikhoan)
             </div>
         </div>
     </div>
