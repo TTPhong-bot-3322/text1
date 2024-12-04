@@ -16,10 +16,14 @@ function dangnhap() {
                 document.addEventListener('DOMContentLoaded', () => {
                     setTimeout(() => {
 <<<<<<< HEAD
+<<<<<<< HEAD
                         window.location.href='http://localhost/tex1/text1/index.php';
 =======
                         window.location.href='/index.php';
 >>>>>>> 2306fb8 (sửa tất cả nội dung người dùng và admin vàbinhluan)
+=======
+                        window.location.href='http://localhost/Duan1/text1/index.php';
+>>>>>>> dddcb17 (hoang lam taikhoan)
                     }, 2000);
                 });
             </script>"; 
