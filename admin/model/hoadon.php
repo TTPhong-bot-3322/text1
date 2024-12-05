@@ -24,10 +24,12 @@ function countHoaDon() {
 }
 // Trong model hoadon.php
 function totalIncome() {
+    // Chỉ tính các đơn hàng có trạng thái "Đã thanh toán"
     $sql = "SELECT SUM(tong_tien) AS total_income FROM hoa_don WHERE trang_thai = 'Đã thanh toán'";
     $result = pdo_query_one($sql);
     return $result['total_income'] ?: 0;  // Trả về tổng doanh thu hoặc 0 nếu không có hóa đơn nào đã thanh toán
 }
+
 function changeStatus($id, $trang_thai)
 {
     $sql = "update hoa_don set trang_thai = '$trang_thai' where id ='$id'";

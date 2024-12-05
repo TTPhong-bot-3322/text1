@@ -57,8 +57,9 @@ include_once("./view/layouts/header.php");
                         <div class="mb-3">
                             <label for="name" class="form-label">Tình trạng thanh toán</label>
                             <select name="trang_thai" class="form-select" aria-label="Default select example">
-                                <option <?= $hoaDonChiTiet['trang_thai'] == 0 ? 'selected' : '' ?> value="0">Chưa thanh toán</option>
-                                <option <?= $hoaDonChiTiet['trang_thai'] == 1 ? 'selected' : '' ?> value="1">Đã thanh toán</option>
+                                <option <?= $hoaDonChiTiet['trang_thai'] == 0 ? 'selected' : '' ?> value="0">Đã thanh toán</option>
+                                <option <?= $hoaDonChiTiet['trang_thai'] == 1 ? 'selected' : '' ?> value="1">Chưa thanh toán</option>
+                                <option <?= $hoaDonChiTiet['trang_thai'] == 2 ? 'selected' : '' ?> value="2">Đã hủy</option>
                             </select>
                         </div>
 

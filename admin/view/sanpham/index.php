@@ -12,13 +12,13 @@ include_once("./view/layouts/header.php");
         <div class="page-title">
             <div class="row">
                 <div class="col-12 col-md-6 order-md-1 order-last">
-                    <h3>Danh sách sản phẩm</h3>
+                    <h3>Sản Phẩm</h3>
                 </div>
                 <div class="col-12 col-md-6 order-md-2 order-first">
                     <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">Trang Chủ</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Danh sách sản phẩm</li>
+                            <li class="breadcrumb-item active" aria-current="page">Sản Phẩm</li>
                         </ol>
                     </nav>
                 </div>
@@ -53,23 +53,33 @@ include_once("./view/layouts/header.php");
                                     <td><?= $value['gia'] ?></td>
                                     <td><img src="<?= $base_url . 'upload/' . $value['hinh_anh'] ?>" width="150px" alt="<?= $value['ten_san_pham'] ?>"></td>
                                     <td><?= $value['mota'] ?></td>
-                                    <td><?= $value['id_danh_muc'] ?></td>
                                     <td>
-                                        <div class="d-flex">
-                                            <a class="btn btn-secondary" href="index.php?action=editsanpham&id=<?=$value['id_sp']?>">Sửa</a>
-                                            <?php
-                                            if ($value['status'] == 1) {
-                                                ?>
-                                                <a class="btn btn-danger" href="index.php?action=deletesanpham&id=<?=$value['id_sp']?>&status=0">Ẩn</a>
-                                                <?php
-                                            } else {
-                                                ?>
-                                                <a class="btn btn-danger" href="index.php?action=deletesanpham&id=<?=$value['id_sp']?>&status=1">Hiện</a>
-                                                <?php
+                                    <?php
+                                        foreach ($listDanhMuc as $dm) {
+                                            if ($dm['id'] == $value['id_danh_muc']) {
+                                                // Kiểm tra trạng thái của danh mục
+                                                $disabled = ($dm['status'] == 0) ? 'text-muted' : '';
+                                                $hiddenText = ($dm['status'] == 0) ? ' (Đã ẩn)' : '';
+                                                
+                                                // In tên danh mục với trạng thái phù hợp
+                                                echo '<span class="' . $disabled . '">' . $dm['ten_danh_muc'] . $hiddenText . '</span>';
+                                                
+                                                break; // Thoát khỏi vòng lặp sau khi tìm thấy danh mục
                                             }
-                                            ?>
+                                        }
+                                        ?>
+                                    <td>
+                                    <div class="d-flex">
+                                            <a class="btn btn-secondary me-2" href="index.php?action=editsanpham&id=<?=$value['id_sp']?>">Sửa</a>
+                                            
+                                            <?php if ($value['status'] == 1): ?>
+                                                <a class="btn btn-danger" href="index.php?action=deletesanpham&id=<?=$value['id_sp']?>&status=0">Ẩn</a>
+                                            <?php else: ?>
+                                                <a class="btn btn-danger" href="index.php?action=deletesanpham&id=<?=$value['id_sp']?>&status=1">Hiện</a>
+                                            <?php endif; ?>
                                         </div>
                                     </td>
+
                                 </tr>
                                 <?php
                             }

@@ -87,18 +87,23 @@ include_once("./Views/layout/header.php");
                                 <?php } ?>
                                 <tr>
                                     <td class="product-name">Phí ship <span>20,000 VNĐ</span></td>
-                                    <td class="product-price" colspan="2"><?= number_format($tong_tien + 20000) ?> VNĐ</td>
+                                    <td class="product-price"><?= number_format($tong_tien + 20000) ?>VNĐ</td>
                                 </tr>
                             </tbody>
                         </table>
 
                         <!-- Payment Methods -->
                         <div class="checkout__input__checkbox">
-                            <label for="tienmat">Tiền mặt</label>
-                            <input type="radio" checked name="hinh_thuc_thanh_toan" value="0" id="tienmat" required>
-                            <label for="online">Thanh toán online</label>
-                            <input type="radio" name="hinh_thuc_thanh_toan" value="1" id="online" required>
+                            <div>
+                                <input type="radio" checked name="hinh_thuc_thanh_toan" value="0" id="tienmat" required>
+                                <label for="tienmat">Tiền mặt</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="hinh_thuc_thanh_toan" value="1" id="online" required>
+                                <label for="online">Thanh toán online</label>
+                            </div>
                         </div>
+
 
                         <!-- Submit Button -->
                         <button type="submit" name="thanhtoan" class="btn btn-success mt-4">Đặt hàng</button>

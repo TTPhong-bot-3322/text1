@@ -32,9 +32,9 @@ function editSanPham($id, $name, $idDanhMuc, $gia, $mota, $fileName)
     pdo_execute($sql);
 }
 
-// function changeStatus($id, $status)
+// function changeStatussp($id, $status)
 // {
-//     $sql = "update danh_muc set status = '$status' where id_danh_muc='$id'";
+//     $sql = "update san_pham set status = '$status' where id_sp='$id'";
 //     pdo_execute($sql);
 // }
 // Trong model sanpham.php

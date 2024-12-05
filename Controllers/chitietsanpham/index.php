@@ -21,9 +21,5 @@ include_once('Models/binhluan.php');
 // Lấy danh sách bình luận theo sản phẩm
 $listBinhLuan = listBinhLuan($id_sp);
 
-// Hàm xử lý thêm bình luận
-
-
-// Bao gồm giao diện chi tiết sản phẩm
 include_once('Views/chitietsanpham/index.php');
 ?>

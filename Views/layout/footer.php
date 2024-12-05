@@ -5,19 +5,22 @@
 				<div class="col-lg-12">
 					<div class="logo-carousel-inner">
 						<div class="single-logo-item">
-							<img src="./aset/img/company-logos/1.png" alt="">
+							<img src="./aset/img/company-logos/a1.png" alt="">
 						</div>
 						<div class="single-logo-item">
-							<img src="./aset/img/company-logos/2.png" alt="">
+							<img src="./aset/img/company-logos/a2.png" alt="">
 						</div>
 						<div class="single-logo-item">
-							<img src="./aset/img/company-logos/3.png" alt="">
+							<img src="./aset/img/company-logos/a3.png" alt="">
 						</div>
 						<div class="single-logo-item">
-							<img src="./aset/img/company-logos/4.png" alt="">
+							<img src="./aset/img/company-logos/a4.png" alt="">
 						</div>
 						<div class="single-logo-item">
-							<img src="./aset/img/company-logos/5.png" alt="">
+							<img src="./aset/img/company-logos/a5.png" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="./aset/img/company-logos/a6.png" alt="">
 						</div>
 					</div>
 				</div>
@@ -121,4 +124,25 @@
 	<script src="./aset/js/main.js"></script>
 
 </body>
+<style>
+	.logo-carousel-inner {
+    display: flex;
+    justify-content: space-between; /* Phân bố đều khoảng cách giữa các logo */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 5px; /* Khoảng cách giữa các logo */
+}
+
+.single-logo-item {
+    flex: 1 1 calc(16.66% - 10px); /* Mỗi logo chiếm khoảng 1/6 chiều rộng (nếu 6 logo trên 1 dòng) */
+    max-width: calc(160px); /* Đảm bảo không vượt quá kích thước này */
+    text-align: center; /* Căn giữa logo trong khung */
+}
+
+.single-logo-item img {
+    max-width: 100%; /* Logo co giãn theo kích thước khung */
+    height: auto; /* Đảm bảo tỷ lệ logo không bị méo */
+    display: inline-block;
+}
+
+</style>
 </html>

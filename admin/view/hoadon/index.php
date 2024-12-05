@@ -54,7 +54,7 @@ include_once("./view/layouts/header.php");
                                     <td><?= $value['dia_chi'] ?></td>
                                     <td><?= $value['sdt'] ?></td>
                                     <td><?= $value['creat_at'] ?></td>
-                                    <td><?= $value['tong_tien'] ?></td>
+                                    <td><?= number_format($value['tong_tien']) ?></td>
                                     <td>
                                         <?php  
                                         if ($value['hinh_thuc_thanh_toan'] == 0) {
@@ -68,9 +68,11 @@ include_once("./view/layouts/header.php");
                                     <td>
                                         <?php
                                             if ($value['trang_thai'] == 0) {
-                                                echo 'Chưa thanh toán'; 
-                                            } elseif ($value['trang_thai'] == 1) {
                                                 echo 'Đã thanh toán'; 
+                                            } elseif ($value['trang_thai'] == 1) {
+                                                echo 'Chưa thanh toán'; 
+                                            }elseif ($value['trang_thai'] == 2) {
+                                                echo 'Đã hủy'; 
                                             }
                                         ?>
                                     </td>

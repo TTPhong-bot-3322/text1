@@ -1,12 +1,12 @@
 <footer>
                 <div class="footer clearfix mb-0 text-muted">
                     <div class="float-start">
-                        <p>2021 &copy; Mazer</p>
+                        <p>Nhóm 3 &copy; 4 Anh Chàng Thư Giãn</p>
                     </div>
-                    <!-- <div class="float-end">
-                        <p>Crafted with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a
-                                href="http://ahmadsaugi.com">A. Saugi</a></p>
-                    </div> -->
+                    <div class="float-end">
+                        <p>Lập Trình <span class="text-danger"><i class="bi bi-heart"></i></span>  <a
+                                href="http://ahmadsaugi.com">Web bán máy ảnh</a></p>
+                    </div>
                 </div>
             </footer>
         </div>

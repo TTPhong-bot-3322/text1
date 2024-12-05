@@ -38,7 +38,6 @@ include_once("./Views/layout/header.php");
             </div>
 			<h2><span class="orange-text">Sản</span> Phẩm</h2>
 			<div class="row product-lists">
-				
     <?php foreach ($listSanPham as $item): ?>
         <div class="col-lg-4 col-md-6 text-center strawberry">
             <div class="single-product-item">

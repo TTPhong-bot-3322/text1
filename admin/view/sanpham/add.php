@@ -33,11 +33,17 @@ include_once("./view/layouts/header.php");
                         <div class="mb-3">
                             <label for="danhmuc" class="form-label">Tên danh mục</label>
                             <select required class="form-select" name="danhmuc" aria-label="Default select example">
-                                <?php
-                                foreach ($listDanhMuc as $item) {
+                            <?php
+                            foreach ($listDanhMuc as $item) {
+                                // Chỉ hiển thị danh mục nếu status = 1 (hiển thị)
+                                if ($item['status'] == 1) {
                                     ?>
                                     <option value="<?= $item['id'] ?>"><?= $item['ten_danh_muc'] ?></option>
-                                <?php } ?>
+                                    <?php
+                                }
+                            }
+                            ?>
+
                             </select>
                         </div>
 

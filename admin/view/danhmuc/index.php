@@ -49,7 +49,10 @@ include_once("./view/layouts/header.php");
                                     <td><?= $value['ten_danh_muc'] ?></td>
                                     <td>
                                         <div class="d-flex">
-                                            <a class="btn btn-secondary" href="index.php?action=editdanhmuc&id=<?=$value['id']?>">Sửa</a>
+                                            <!-- Button to edit category -->
+                                            <a class="btn btn-secondary" href="index.php?action=editdanhmuc&id=<?= $value['id'] ?>">Sửa</a>
+                                            
+                                            <!-- Button for toggling the visibility of the category -->
                                             <?php
                                             if ($value['status'] == 1) {
                                                 ?>
@@ -63,6 +66,7 @@ include_once("./view/layouts/header.php");
                                             ?>
                                         </div>
                                     </td>
+
                                 </tr>
                                 <?php
                             }

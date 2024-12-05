@@ -25,6 +25,9 @@ if (isset($_GET['action']) && $_GET['action'] != '') {
         case "editsanpham":
             include_once 'controller/sanpham/edit.php';
             break;
+        case "deletesanpham":
+            include_once 'controller/sanpham/delete.php';
+            break;
         case "listhoadon":
             include_once 'controller/hoadon/index.php';
             break;
