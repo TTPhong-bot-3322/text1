@@ -24,7 +24,7 @@ include_once("./Views/layout/header.php");
 <!-- End Search Area -->
 
 <!-- Breadcrumb Section -->
-<div class="breadcrumb-section breadcrumb-bg">
+<div class="breadcrumb-section breadcrumb-bg7">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 offset-lg-2 text-center">

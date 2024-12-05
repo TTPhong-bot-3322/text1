@@ -33,7 +33,12 @@
 
 </head>
 <body>
-	
+<style>
+							.site-logo {
+								margin-top: -50px;
+								
+							}
+						</style>
 	<!--PreLoader-->
     <div class="loader">
         <div class="loader-inner">
@@ -50,10 +55,11 @@
 					<div class="main-menu-wrap">
 						<!-- logo -->
 						<div class="site-logo">
-							<a href="index.html">
-								<img src="assets/img/logo.png" alt="">
+							<a href="index.php" >
+								<img width="700px" src="aset/img/logo3.png" alt="">
 							</a>
 						</div>
+
 						<!-- logo -->
 
 						<!-- menu start -->

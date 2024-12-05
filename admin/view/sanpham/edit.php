@@ -47,7 +47,7 @@ include_once("./view/layouts/header.php");
                                 name="name" id="danhmuc">
                         </div>
                         <div class="mb-3">
-                            <label for="danhmuc" class="form-label">Gía sản phẩm</label>
+                            <label for="danhmuc" class="form-label">Giá sản phẩm</label>
                             <input value="<?= $sanPhamInfo['gia'] ?>" required type="number" class="form-control"
                                 name="gia" id="danhmuc">
                         </div>

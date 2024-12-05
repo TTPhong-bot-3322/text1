@@ -17,7 +17,7 @@ if (isset($_POST['thanhtoan'])) {
     $ten_nguoi_dung = $_POST['ten_nguoi_dung']; 
     $dia_chi = $_POST['dia_chi'];
     $sdt = $_POST['sdt'];
-    $hinh_thuc = $_POST['hinh_thuc_thanh_toan'];
+    $hinh_thuc_thanh_toan = $_POST['hinh_thuc_thanh_toan'];
     $tong_tien += 20000;
     $id_khach_hang = 0;
     if (!isset($_SESSION['giohang']) || empty($_SESSION['giohang'])) {

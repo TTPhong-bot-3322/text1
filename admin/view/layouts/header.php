@@ -28,12 +28,16 @@ if (isset($_SESSION['admin'])){
 </head>
 
 <body>
+<?php
+    // Lấy hành động hiện tại từ URL
+    $currentAction = isset($_GET['action']) ? $_GET['action'] : '';
+    ?>
     <div id="app">
         <div id="sidebar" class="active">
             <div class="sidebar-wrapper active">
                 <div class="sidebar-header">
                 <div class="d-flex justify-content-between">
-                        <div class="logo">
+                        <div class="logo" >
 
                             <a href="index.php?action=thongke">Admin</a>
 
@@ -44,51 +48,92 @@ if (isset($_SESSION['admin'])){
                         </div>
                     </div>
                 </div>
-                <div class="sidebar-menu">
+                <div class="sidebar-menu" >
                     <ul class="menu">
                         <li class="sidebar-title">Menu</li>
 
-                        <li class="sidebar-item  ">
+                        <li class="sidebar-item <?php
+if ($currentAction === 'thongke') {
+    echo 'active';
+} else {
+    echo '';
+}
+?>">
                             <a href="index.php?action=thongke" class='sidebar-link'>
                                 <i class="bi bi-grid-fill"></i>
                                 <span>Trang chủ</span>
                             </a>
                         </li>
 
-                        <li class="sidebar-item ">
+                        <li class="sidebar-item <?php
+if ($currentAction === 'listdanhmuc' || $currentAction === 'adddanhmuc' || $currentAction === 'editdanhmuc') {
+    echo 'active';
+} else {
+    echo '';
+}
+?>">
                             <a href="index.php?action=listdanhmuc" class='sidebar-link'>
                                 <i class="bi bi-file-earmark-spreadsheet-fill"></i>
                                 <span>Danh mục</span>
                             </a>
                         </li>
 
-                        <li class="sidebar-item">
+                        <li class="sidebar-item <?php
+if ($currentAction === 'listsanpham' || $currentAction === 'addsanpham' || $currentAction === 'editsanpham') {
+    echo 'active';
+} else {
+    echo '';
+}
+?>">
                             <a href="index.php?action=listsanpham" class='sidebar-link'>
                                 <i class="bi bi-file-earmark-spreadsheet-fill"></i>
                                 <span>Sản phẩm</span>
                             </a>
                         </li>
-                        <li class="sidebar-item  ">
-
+                        <li class="sidebar-item <?php
+if ($currentAction === 'listnguoidung' || $currentAction === 'deletenguoidung' ) {
+    echo 'active';
+} else {
+    echo '';
+}
+?>">
                             <a href="index.php?action=listnguoidung" class='sidebar-link'>
                                 <i class="bi bi-file-earmark-spreadsheet-fill"></i>
                                 <span>Người dùng</span>
                             </a>
                         </li>
-                        <li class="sidebar-item">
+                        <li class="sidebar-item <?php
+if ($currentAction === 'listhoadon' || $currentAction === 'listchitiethoahon' ) {
+    echo 'active';
+} else {
+    echo '';
+}
+?>">
                             <a href="index.php?action=listhoadon" class='sidebar-link'>
                                 <i class="bi bi-file-earmark-spreadsheet-fill"></i>
                                 <span>Hóa đơn</span>
                             </a>
                         </li>
-                        <li class="sidebar-item  ">
+                        <li class="sidebar-item <?php
+if ($currentAction === 'listbinhluan' || $currentAction === 'deletebinhluan' ) {
+    echo 'active';
+} else {
+    echo '';
+}
+?>">
 
                             <a href="index.php?action=listbinhluan" class='sidebar-link'>
                                 <i class="bi bi-file-earmark-spreadsheet-fill"></i>
                                 <span>Bình luận</span>
                             </a>
                         </li>
-                        <li class="sidebar-item  ">
+                        <li class="sidebar-item <?php
+if ($currentAction === 'contact') {
+    echo 'active';
+} else {
+    echo '';
+}
+?>">
 
                             <a href="index.php?action=contact" class='sidebar-link'>
                                 <i class="bi bi-file-earmark-spreadsheet-fill"></i>
