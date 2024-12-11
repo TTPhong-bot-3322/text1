@@ -23,16 +23,16 @@ include_once("./Views/layout/header.php");
                 <div class="col-md-12">
 				<h2><span class="orange-text">Hãng</span> Sản Phẩm</h2>
                     <div class="product-filters">
-						
                     <ul>
-                        <?php foreach ($listDanhMuc as $item): ?>
-                            <li class="<?= isset($_GET['id_danh_muc']) && $_GET['id_danh_muc'] == $item['id'] ? 'active' : '' ?>">
-                                <a href="index.php?action=sanpham&id_danh_muc=<?= $item['id'] ?>">
-                                    <?= $item['ten_danh_muc'] ?>
-                                </a>
-                            </li>   
-                        <?php endforeach; ?>
-                    </ul>
+						<?php foreach ($listDanhMuc as $item): ?>
+							<?php if ($item['status'] == 0) continue; ?> <!-- Nếu trạng thái = 0 thì bỏ qua mục này -->
+							<li class="<?= isset($_GET['id_danh_muc']) && $_GET['id_danh_muc'] == $item['id'] ? 'active' : '' ?>">
+								<a href="index.php?action=sanpham&id_danh_muc=<?= $item['id'] ?>">
+									<?= $item['ten_danh_muc'] ?>
+								</a>
+							</li>   
+						<?php endforeach; ?>
+					</ul>
                     </div>
                 </div>
             </div>

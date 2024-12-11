@@ -6,6 +6,12 @@ function listSanPham()
     $sql = 'select * from san_pham';
     return pdo_query($sql);
 }
+// function listSanPhamst($status)
+// {
+//     $sql = 'SELECT * FROM san_pham WHERE status = :status';
+//     return pdo_query($sql, [':status' => $status]);
+// }
+
 
 function addSanPham($name, $idDanhMuc,$gia, $mota, $fileName)
 {

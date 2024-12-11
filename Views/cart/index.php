@@ -54,7 +54,11 @@ include_once("./Views/layout/header.php");
 					<?php foreach ($listgiohang as $item) { ?>
 					<tr class="table-body-row">
 									<td class="product-remove">
-										<a href="index.php?action=delcart&id_sp='.$i.'"><i class="far fa-window-close"></i></a>
+									<a href="index.php?action=delcart&id=<?= $item['id'] ?>" 
+										onclick="return confirm('Bạn có chắc muốn xóa sản phẩm này?');">
+											<i class="far fa-window-close"></i>
+										</a>
+
 									</td>
 									<td class="product-image"><img src="<?= $base_url . 'admin/upload/' . $item['hinh_anh'] ?>" alt=""></td>
                                     <td class="product-name"><?= $item['ten_san_pham'] ?></td>
