@@ -25,7 +25,7 @@ if (isset($_GET['action']) && $_GET['action'] != '') {
         case "editsanpham":
             include_once 'controller/sanpham/edit.php';
             break;
-        case "deletesanpham":
+        case "deleteSanPham":
             include_once 'controller/sanpham/delete.php';
             break;
         case "listhoadon":
@@ -52,9 +52,9 @@ if (isset($_GET['action']) && $_GET['action'] != '') {
         case "thongke":
             include_once 'controller/thongke/index.php';
             break;
-            case "capnhathoadon":
-                include_once 'controller/ChiTietHoaDon/capnhathoadon.php';
-                break;
+        case "capnhathoadon":
+            include_once 'controller/ChiTietHoaDon/capnhathoadon.php';
+            break;
             
     }
 } else {

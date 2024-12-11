@@ -1,4 +1,41 @@
 	<!-- logo carousel -->
+	 <style>
+		/* CSS for Logo Carousel Section */
+.logo-carousel-section {
+   
+    padding: 40px 0; /* Khoảng cách trên và dưới */
+}
+
+.logo-carousel-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-carousel-section .logo-carousel-inner {
+    display: flex;
+    justify-content: space-evenly; /* Căn đều khoảng cách giữa các logo */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    flex-wrap: wrap; /* Đảm bảo logo xuống dòng nếu không đủ không gian */
+    gap: 20px; /* Khoảng cách giữa các logo */
+}
+
+.logo-carousel-section .single-logo-item {
+    flex: 0 0 150px; /* Đặt kích thước cố định cho logo */
+    text-align: center; /* Căn giữa logo */
+}
+
+.logo-carousel-section .single-logo-item img {
+    width: 100%;
+    max-height: 80px; /* Đặt chiều cao tối đa để logo đồng đều */
+    object-fit: contain; /* Đảm bảo logo không bị méo */
+    transition: transform 0.3s ease-in-out; /* Hiệu ứng hover */
+}
+
+.logo-carousel-section .single-logo-item img:hover {
+    transform: scale(1.1); /* Phóng to nhẹ khi hover */
+}
+
+	 </style>
 	<div class="logo-carousel-section">
 		<div class="container">
 			<div class="row">
@@ -124,25 +161,5 @@
 	<script src="./aset/js/main.js"></script>
 
 </body>
-<style>
-	.logo-carousel-inner {
-    display: flex;
-    justify-content: space-between; /* Phân bố đều khoảng cách giữa các logo */
-    align-items: center; /* Căn giữa theo chiều dọc */
-    gap: 5px; /* Khoảng cách giữa các logo */
-}
 
-.single-logo-item {
-    flex: 1 1 calc(16.66% - 10px); /* Mỗi logo chiếm khoảng 1/6 chiều rộng (nếu 6 logo trên 1 dòng) */
-    max-width: calc(160px); /* Đảm bảo không vượt quá kích thước này */
-    text-align: center; /* Căn giữa logo trong khung */
-}
-
-.single-logo-item img {
-    max-width: 100%; /* Logo co giãn theo kích thước khung */
-    height: auto; /* Đảm bảo tỷ lệ logo không bị méo */
-    display: inline-block;
-}
-
-</style>
 </html>

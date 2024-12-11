@@ -38,6 +38,9 @@ if (isset($_GET['action']) && $_GET['action'] != '') {
         case 'addbinhluan':
             include_once 'Controllers/binhluan/add.php';
             break;
+            case 'delcart':
+                include_once 'Controllers/cart/delcart.php';
+                break;
         }
         
 } else {

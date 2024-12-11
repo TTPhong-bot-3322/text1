@@ -255,7 +255,7 @@ include_once("./Views/layout/header.php");
 						<a href="single-product.html"><img src="<?= $base_url . 'admin/upload/' . $item['hinh_anh'] ?>" alt=""></a>
 					</div>
 					<h3><?= $item['ten_san_pham'] ?></h3>
-					<a href="index.php?action=chitietsanpham&id=<?=$item['id_sp']?>" class="cart-btn"><i class="fas fa-shopping-cart"></i>Xem chi tiết sản phẩm</a>
+					<a href="index.php?action=chitietsanpham&id=<?=$item['id_sp']?>" class="cart-btn"><i ></i>Xem chi tiết sản phẩm ></a>
 				</div>
 			</div>
 			<?php } ?>
